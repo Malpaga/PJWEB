@@ -38,6 +38,7 @@ h1{
     
 	text-align: center;    
     margin-top: 10px;
+    
 }
 
 .bouton:hover{
@@ -52,5 +53,19 @@ h1{
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 1px 1px lightgrey;
+    
+}
+
+h2{
+    color: aliceblue;
+}
+
+.photo{
+    float: left;
+}
+
+span{
+    text-align: center;
+    color: aliceblue;
     
 }

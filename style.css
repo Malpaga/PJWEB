@@ -40,6 +40,10 @@ h1{
     margin-top: 10px;
 }
 
+.bouton:hover{
+    background-color: #dcdde1;
+}
+
 .bouton{
     display: inline-flex;
     padding: 8px;

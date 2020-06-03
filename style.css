@@ -1,0 +1,52 @@
+*{
+    font-family:verdana, sans-serif;
+    text-decoration : none;
+    color : black;
+}
+
+body
+{
+    background-color: #2f3640;
+}
+
+header{
+    padding:25px 0px;
+	background-color: #f5f6fa; 
+    border-bottom: 2px solid black;
+    
+}
+
+.image{
+    display: inline-flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75px;
+    border-radius : 10px;
+    background-color: ;
+}
+
+.nav_buttons
+{
+    display : flex;
+    justify-content: flex-end;
+    
+}
+
+h1{
+    display: inline;
+    
+	text-align: center;    
+    margin-top: 10px;
+}
+
+.bouton{
+    display: inline-flex;
+    padding: 8px;
+    margin-left: 3%;
+    margin-right: 1%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px lightgrey;
+    
+}

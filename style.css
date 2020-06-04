@@ -6,22 +6,25 @@
     padding: 0;
 }
 
-
-
-header{
-    padding:25px 0px;
-	background-color: #f5f6fa;     
-}
-
-.image{
+.logo
+{
     display: inline-flex;
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 75px;
-    border-radius : 10px;
-    background-color: ;
+    width: 20em;
 }
+
+header{
+    top: 0;
+    padding: 5px;   
+    position: fixed; 
+}
+
+.fixed{
+    background-color:  
+}
+
 
 .name{
     display: flex;
@@ -29,33 +32,39 @@ header{
     padding-top: none;
 }
 
-.nav_buttons
+.menu
 {
-    display : flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-nav{
-    background-color: #95afc0;
+    display: inline-flex;
+    width: 100%;
+    background-color: rgba(1, 163, 164, 1);
     border-top: 3px solid #535c68;
     border-bottom: 1px solid #535c68;
-}
-
-h1{
-    display: inline;
-	text-align: center;    
-    margin-top: 10px;
+    flex-flow: row nowrap;
     
 }
+
+.buttons
+{
+    display: inline-flex;
+    align-items: flex-end;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.nav_buttons
+{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 
 .bouton:hover{
     background-color: #dcdde1;
 }
 
 .bouton{
-    display: inline-flex;
     padding: 8px;
     padding-left: 3%;
     padding-right: 3%;
@@ -79,6 +88,8 @@ body
 }
 
 main{
+    margin-top: 8em;;
+    padding: 2em;
     min-height: 100%;
 }
 

@@ -18,11 +18,21 @@ body, html{
 html
 {
     background-image: url("https://images6.alphacoders.com/478/thumb-1920-478918.jpg");  
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 main{
     margin: 20px;
     min-height: 100%;
+}
+
+.welcome{
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 300;
+    font-size: 5vw;
 }
 
 h2{

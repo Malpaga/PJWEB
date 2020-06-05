@@ -1,18 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
+
 *{
-    font-family:verdana, sans-serif;
+    font-family:Lato;
+    font-weight: 400;
     text-decoration : none;
-    color : black;
+    color : rgba(223, 249, 251,1.0);
     margin: 0;
     padding: 0;
 }
 
 body, html{
     height: 100%;
+    
 }
 
-body
+html
 {
-    background-color: #f5f6fa;
+    background-image: url("https://images6.alphacoders.com/478/thumb-1920-478918.jpg");  
 }
 
 main{
@@ -22,7 +27,6 @@ main{
 
 h2{
     padding-top: 1%;
-    color: #2f3640;
 }
 
 .photo{
@@ -35,7 +39,6 @@ h2{
     padding-top: 2%;
     padding-left: 2%;
     text-align: center;
-    color: #2f3640;
 }
 
 .footer{

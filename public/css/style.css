@@ -8,6 +8,7 @@
     color : rgba(223, 249, 251,1.0);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html{
@@ -17,13 +18,18 @@ body, html{
 
 html
 {
-    background-image: url("https://images6.alphacoders.com/478/thumb-1920-478918.jpg");  
+    
+    
+}
+
+body{
+    background-image: url("https://images6.alphacoders.com/478/thumb-1920-478918.jpg");
     background-position: bottom;
     background-attachment: fixed;
+    min-height: 100%;
 }
 
 main{
-    margin: 20px;
     min-height: 100%;
 }
 
@@ -33,6 +39,18 @@ main{
     margin-top: 150px;
     font-weight: 300;
     font-size: 5vw;
+}
+
+p{
+    width: 100%;
+    margin-top: 300px;
+    padding: 10px 50px;
+    height: 500px;
+}
+
+.P1{
+    color: black;
+    background-color: rgba(126, 214, 223,1.0);
 }
 
 h2{
@@ -49,14 +67,4 @@ h2{
     padding-top: 2%;
     padding-left: 2%;
     text-align: center;
-}
-
-.footer{
-    border-top: 3px solid #535c68;
-    background-color: #95afc0;
-}
-
-.titleFooter{
-    display: flex;
-    justify-content: space-around;
 }

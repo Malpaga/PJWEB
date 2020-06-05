@@ -1,75 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 
+@font-face{
+    font-family: 'LemonMilk';
+    src: url("public/fonts/LEMONMILK-Light.otf");
+}
+
 header{
-	  background-color: rgba(149, 175, 192,1.0);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .image{
     height: 70px;
+    transition: all 0.3s ease-in;
 }
 
 .menu
 {
+    display: flex;
+    padding-top: 3px;
     width: 100%;
     height: 72px;
     line-height: 72px;
-    border-top: 3px solid #535c68;
-    border-bottom: 1px solid #535c68;
+    box-shadow: none;
 }
 
 .nav_left{
-    float: left;
-    margin-left: 100px;
+    margin-right: auto;
+    margin-left: 80px;
 }
 
 .nav_right{
-    float: right;
+    margin-left: auto;
     margin-right: 30px;
 }
 
 .nav_link{
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: large;
+    font: 'LemonMilk';
+    font-size: 120%;
     color: rgba(223, 249, 251,1.0);
     text-transform: uppercase;
     margin: 0 30px;
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
 }
 
 .nav_link:hover{
-    padding-bottom: 2px;
     border-color: rgba(48, 51, 107, 1.0);
 }
 
 .nav_toggle{
-    width: 30px;
-    height: 70px;
+    width: 35px;
+    position: relative;
     display: none;
     align-items: center;
-    float: left;
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: 65px;
     cursor: pointer;
 }
 
-span.icon_toggle, span.icon_toggle:before, span.icon_toggle:after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    border-radius: 30%;
-    background-color: #ffffff;
-    position: relative;
-}
+
 
 span.icon_toggle:before{top: 10px;}
 span.icon_toggle:after{top: -13px;}
 
-@media only screen and (max-width: 1145px){
+@media only screen and (max-width: 1200px){
     .nav_left{
         position: absolute;
-        top: 72px;
+        top: 0;
+        left: 0;
+        padding-top: 72px;
+        margin: 0;
+        width: 200px;
+        background-color: rgba(19, 15, 64, 0.8);
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
     }
-    .nav_toggle{display: flex;}
+    .nav_link{
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0 10px;
+    }
+    .nav_link:hover{
+        border-color: rgba(48, 51, 107, 1.0);
+    }
+    .hamburger{display: inline-block;}
+    .hamburger-box{display: inline-block;}
+    .hamburger-inner{display: block;}
 }

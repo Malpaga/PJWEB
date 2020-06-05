@@ -1,0 +1,33 @@
+.footer{
+    border-top: 3px solid #535c68;
+    background-color: #95afc0;
+
+}
+
+.footer_parts{
+    margin-left: 1%;
+    display: flex;
+}
+
+#pages{
+    width: 33%;
+}
+
+#us{
+    width: 33%;
+}
+
+#sociaux{
+    width: 34%;
+}
+
+.logos{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+}
+
+#liste_us ul{
+    list-style: none;
+}

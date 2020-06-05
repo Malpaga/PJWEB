@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+@font-face{
+    font-family: 'LemonMilk';
+    src: url("public/fonts/LEMONMILK-Light.otf");
+
+}
 
 *{
     font-family:Lato;
@@ -15,7 +22,7 @@ body, html{
 }
 
 body{
-    background-image: url("https://images6.alphacoders.com/478/thumb-1920-478918.jpg");
+    background-image: url("https://images6.alphacoders.com/478/478918.jpg");
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -28,45 +35,81 @@ main{
 
 h1{
     width: 100%;
-    text-align: center;  
+     
     
 }
 
 .title{
     margin-top: 150px;
-    margin-bottom: 50%; 
+    margin-bottom: 200px; 
+}
+
+.welcome-title{
+    font-weight: 300;
+    font-size: 500%;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 150%;
+    
 }
 
 .welcome{
-    font-weight: 300;
-    font-size: 5vw;
+    padding-top: 10%;
     margin-top: 150px;
-    margin-bottom: 50%; 
+    margin-bottom: 750px;
+    
+    text-align: center;  
 }
 
-p{
+.seq-link{
+    padding: 5px;
+    background-image: linear-gradient(to right, rgba(83, 92, 104, 0.5) 50%, rgba(249, 202, 36, 0.5) 50%);
+    background-size: 200%;
+    transition: background-position 1s ease-in-out;
+}
+  
+.seq-link:hover{
+    background-position: -100%;
+}
+
+h3{    
+    font-size: 500%;
+}
+
+.spot{
     width: 100%;
     padding: 10px 50px;
     height: 2000px;
-    text-align: center;
-    font-size: 2vw;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .P1{
     color: white;
+    text-shadow: 0px 0px 5px #ff0000;
     background-image: url('https://wallpaperaccess.com/full/1403827.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
 
 .P2{
+    flex-direction: column;
     color: white;
+    
     background-image: url('https://cdn.news.bandsintown.com/wp-content/uploads/2016/12/header_chriscornell_Jimena_Garrote1.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+}
+
+.P2 h3{
+    text-shadow: 0px 0px 5px #ff0000;
 }
 
 h1{

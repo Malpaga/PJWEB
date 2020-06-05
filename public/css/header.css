@@ -18,6 +18,7 @@
 
 .image{
     height: 70px;
+    
 }
 
 .menu
@@ -31,13 +32,16 @@
 }
 
 .nav_left{
-    margin-right: auto;
+    position: relative;
+    left: 0;
     margin-left: 80px;
 }
 
 .nav_right{
     margin-left: auto;
     margin-right: 30px;
+    overflow: hidden;
+    
 }
 
 .nav_link{
@@ -72,10 +76,18 @@
     
 }
 
-span.icon_toggle:before{top: 10px;}
-span.icon_toggle:after{top: -13px;}
-
 @media only screen and (max-width: 1200px){
+    .nav_right{
+        width: 70px;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+    }
+    .image{
+        position: relative;
+        right: 93px;
+        border-radius: 100px;
+        transition: all 0.5s ease-in-out;
+    }
     .nav_left{
         position: absolute;
         top: 0;

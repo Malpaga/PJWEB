@@ -5,15 +5,19 @@
     src: url("public/fonts/LEMONMILK-Light.otf");
 }
 
-header{
+#h{
     position: fixed;
     top: 0;
     width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.scrolled{
+    background-color: rgba(19, 15, 64, 0.8);
 }
 
 .image{
     height: 70px;
-    transition: all 0.3s ease-in;
 }
 
 .menu
@@ -55,13 +59,18 @@ header{
     width: 35px;
     position: relative;
     display: none;
-    align-items: center;
     margin-right: auto;
     margin-left: 65px;
     cursor: pointer;
 }
 
+.active{
+    
+}
 
+.hidden{
+    
+}
 
 span.icon_toggle:before{top: 10px;}
 span.icon_toggle:after{top: -13px;}
@@ -74,9 +83,9 @@ span.icon_toggle:after{top: -13px;}
         padding-top: 72px;
         margin: 0;
         width: 200px;
-        background-color: rgba(19, 15, 64, 0.8);
         transform: translateX(-100%);
-        transition: all 0.3s ease-in-out;
+        background-color: rgba(19, 15, 64, 0.8);
+        transition: all 0.3s cubic-bezier(1,.01,0,.97);
     }
     .nav_link{
         display: block;
@@ -86,6 +95,12 @@ span.icon_toggle:after{top: -13px;}
     }
     .nav_link:hover{
         border-color: rgba(48, 51, 107, 1.0);
+    }
+    .active{
+        transform: translateX(0);
+    }
+    .hidden{
+        transform: translateX(-100%);
     }
     .hamburger{display: inline-block;}
     .hamburger-box{display: inline-block;}

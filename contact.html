@@ -6,16 +6,15 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
+        <script src="public/js/script.js"></script>
         <title class = title>OUTMOS</title>
     </head>
     <body>
-        <header role="header">
-            
+        <header id="h">
         
-        
-            <nav class="menu">
-                
-                <div class="nav_left">
+            <nav class="menu"> 
+
+                <div class="nav_left" id="nl">
                         <a href="index.html" class="nav_link">Home</a>
                         <a href="news.html" class="nav_link">News</a>
                         <a href="artists.html" class="nav_link">Artists</a>
@@ -23,21 +22,61 @@
                         <a href="contact.html" class="nav_link">Contact us</a>
                         <a href="more.html" class="nav_link">More</a>
                 </div>
+
+                <button class="nav_toggle hamburger hamburger--collapse" type="button" id="burg" onclick="activate()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                
                 <div class="nav_right">
-                    <h1 class="logo"><a href="index.html"> <img src = "public/img/outmos.png" class = image /></a></h1>
+                    <h1><a href="index.html"> <img src = "public/img/outmos.png" class="image" id="logo"/></a></h1>
                 </div>
+                
             </nav>
 
             
         </header> 
         
         <main>
-        <h1>Contact us</h1>
+        <h1 class="title">Contact us</h1>
         </main>
         
-        <footer>
-        
-        
+        <footer class = footer>
+            <div class = footer_parts>
+                <div id = pages>
+                    <h2>OUR PAGES</h2>
+                    <div id = liste_pages>
+                        <ul>
+                            <li><a href="index.html">Home page</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="artists.html">Artists</a></li>
+                            <li><a href="reviews.html">Our reviews</a></li>
+                            <li><a href="more.html">More</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id = us>
+                    <h2>ABOUT</h2>
+                    <div id = listeus>
+                        <ul>
+                            <li><a href="about.html">Want to know us better ?</a></li>
+                            <li><a href="credits.html">The credits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id = sociaux>
+                    <h2>CONTACT</h2>
+                    <div>
+                        <a href="contact.html">Contact us</a>
+                        <div>
+                            <a href="https://www.facebook.com/Outmos"><img src = "public/img/Facebook.png" class = logos></a>
+                            <a href="https://twitter.com/Outmos1"><img src = "public/img/Twitter.png" class = logos></a>
+                            <a href="https://www.instagram.com/outmos/"><img src = "public/img/Instagram.png" class = logos></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 

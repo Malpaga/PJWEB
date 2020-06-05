@@ -88,6 +88,7 @@ h3{
 }
 
 .P1{
+    flex-direction: column;
     color: white;
     text-shadow: 0px 0px 5px #ff0000;
     background-image: url('https://wallpaperaccess.com/full/1403827.jpg');
@@ -110,6 +111,17 @@ h3{
 
 .P2 h3{
     text-shadow: 0px 0px 5px #ff0000;
+}
+
+.article{
+    height: 300px;
+    width: 300px;
+    
+    color: black;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    align-self: flex-start;
 }
 
 h1{

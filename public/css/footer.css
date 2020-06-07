@@ -1,16 +1,20 @@
 .footer{
-    border-top: 3px solid #535c68;
-    background-color: #95afc0;
-
+    background-color: rgba(19, 15, 64, 0.8);
 }
 
 .footer_parts{
-    margin-left: 1%;
     display: flex;
+    margin-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #pages{
     width: 33%;
+}
+
+#liste_pages{
+    margin-top: 3%;
 }
 
 #us{
@@ -22,12 +26,40 @@
 }
 
 .logos{
-    margin-top: 1%;
+    margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
     width: 10%;
+    border-radius: 5px;
 }
 
-#liste_us ul{
+#contact{
+    margin-top: 3%;
+}
+
+#liste_us{
+    margin-top: 3%;
+}
+
+#liste_us ul, #liste_pages ul, #contact ul{
     list-style: none;
 }
+
+#liste_us li, #liste_pages li, #contact li{
+    margin-top: 5%;
+}
+
+#liste_us a:hover{
+    color: rgba(149, 175, 192,1.0);
+}
+
+#liste_pages a:hover{
+    color: rgba(149, 175, 192,1.0);
+}
+
+#contact a:hover{
+    color: rgba(149, 175, 192,1.0);
+}
+
+
+

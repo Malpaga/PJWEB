@@ -17,7 +17,8 @@ header{
 }
 
 .scrolled{
-    background-color: rgba(19, 15, 64, 0.8);
+    background-color: #754F44;
+    opacity: 0.8;
 }
 
 .image{
@@ -60,7 +61,7 @@ header{
 }
 
 .nav_link:hover{
-    border-color: rgba(48, 51, 107, 1.0);
+    border-color: #EC7357;
 }
 
 .nav_toggle{
@@ -104,7 +105,8 @@ header{
         margin: 0;
         width: 200px;
         transform: translateX(-100%);
-        background-color: rgba(19, 15, 64, 0.8);
+        background-color: #754F44;
+        opacity: 0.8;
         transition: all 0.3s cubic-bezier(1,.01,0,.97);
     }
     .nav_link{
@@ -114,7 +116,8 @@ header{
         margin: 0 10px;
     }
     .nav_link:hover{
-        border-color: rgba(48, 51, 107, 1.0);
+        background-color: #754F44;
+        opacity: 1;
     }
     .active{
         transform: translateX(0);

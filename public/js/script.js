@@ -25,3 +25,15 @@ window.onscroll = function()
     }
     
 }
+
+function expand(){
+    document.getElementById('circle').className = "active";
+    document.getElementById('ArticlePJ').style.opacity = "1";
+    document.getElementById('textCircle').style.opacity = "0";
+}
+
+function closing(){
+    document.getElementById('circle').className = "";
+    document.getElementById('ArticlePJ').style.opacity = "0";
+    document.getElementById('textCircle').style.opacity = "1";
+}

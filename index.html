@@ -6,16 +6,18 @@
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
         <script src="public/js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>OUTMOS</title>
     </head>
-    <body>
+    <body id="index_body">
         <header id="h">
         
             <nav class="menu"> 
 
                 <div class="nav_left" id="nl">
                         <a href="index.html" class="nav_link">Home</a>
-                        <a href="news.html" class="nav_link">News</a>
+                        <a href="sequencer.html" class="nav_link">Let's rock</a>
                         <a href="artists.html" class="nav_link">Artists</a>
                         <a href="reviews.html" class="nav_link">Reviews</a>
                         <a href="contact.html" class="nav_link">Contact us</a>
@@ -35,7 +37,7 @@
             </nav>
 
 
-        </header>   
+        </header> 
         
         <main>
             <div>
@@ -45,24 +47,28 @@
                     
                 </div>
                 
-                    <div class="spot P1">
-                        <h3 class="spot_title"> BAND OF THE DAY </h3>
-                        <p class="article circled"> This is Pearl Jam. </p>
+                <div class="spot P1">
+                    <div id="ArticlePJ">This is Pearl Jam 
+                        <div id="close" onclick="closing()">[Close me]</div>
                     </div>
-
-                <div class="spot P2">
-                    <h3 class="spot_title"> FEEL LIKE A ROCKSTAR </h3>
-                    <h2 class="welcome-sub"><a href="sequencer.html" class="seq-link">Your journey starts here</a></h2>
+                    <div id="circle" onclick="expand()">
+                        <p id = textCircle>To know more about Pearl Jam<br>Click here</p>
+                    </div>
                 </div>
             </div>
+        </main>
             <!-- 
             <h2>The artist of the day</h2>
             
             <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/EddieVedder.jpg/220px-EddieVedder.jpg" class = photo />
             
             <span class = TextHome>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus metus eget nibh auctor cursus. Nam at neque massa. Nullam congue sem ac interdum egestas. Nunc euismod molestie dapibus.</span>
-             -->
-        </main>
+        <div class="spot P2">
+                    <h3 class="spot_title"> FEEL LIKE A ROCKSTAR </h3>
+                    <h2 class="welcome-sub"><a href="sequencer.html" class="seq-link">Your journey starts here</a></h2>
+                </div>     
+        
+        -->
         
         <footer class = footer>
             <div class = footer_parts>

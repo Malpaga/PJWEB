@@ -28,12 +28,18 @@ window.onscroll = function()
 
 function expand(){
     document.getElementById('circle').className = "active";
-    document.getElementById('ArticlePJ').style.opacity = "1";
     document.getElementById('textCircle').style.opacity = "0";
+    setTimeout(function(){ 
+        document.getElementById('P1').style.background = "#EC7357";
+        document.getElementById('circle').style.display = "none";
+        document.getElementById('art').style.display = "flex";
+    }, 1000);
 }
 
 function closing(){
+    document.getElementById('circle').style.display = "block";
+    document.getElementById('P1').style = "revert";
     document.getElementById('circle').className = "";
-    document.getElementById('ArticlePJ').style.opacity = "0";
+    document.getElementById('art').style.display = "none";
     document.getElementById('textCircle').style.opacity = "1";
 }

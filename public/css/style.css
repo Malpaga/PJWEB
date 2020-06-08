@@ -87,7 +87,8 @@ h3{
 }
 
 .spot{
-    width: 100%;;
+    width: 100%;
+    padding-top: 80px;
     height: 800px;
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@ h3{
     overflow: hidden;
 }
 
-.P1{
+#P1{
     flex-direction: column;
     color: white;
     
@@ -111,19 +112,6 @@ h3{
     padding-bottom: 80px;
 }
 
-.article{
-    height: 250px;
-    width: 70%;
-    color: white;
-    background-color: #754F44;
-    opacity: 0.8;
-    position: relative;
-    z-index: 0;
-    padding: 40px 50px;
-    align-self: flex-start;
-    justify-self: flex-end;
-}
-
 h1{
     margin: auto;
 }
@@ -135,8 +123,9 @@ h2{
 #circle{
     position: relative;
     z-index: 1;
-    width:600px;
-    height:600px;
+    width:500px;
+    height:500px;
+    top:0px;
     left:-50%;
     background:#EC7357;
     opacity: 0.8;
@@ -149,36 +138,97 @@ h2{
     width:3000px;
     height: 3000px;
     top: 50%;
-    left: 50%;
-    margin-left:-1600px;
-    margin-top:-1500px;
+    left:50%;
+    margin-left:-1000px;
+    margin-top:-1000px;
     opacity: 1;
 }
 
 #ArticlePJ{
-    opacity: 0;
     z-index:4;
-    position:absolute;
     transition:all 0.5s;
     transition-delay: 1s; 
-    
 }
 
 #textCircle{
     margin-top : 50%;
     margin-left: 45%;
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 22px;
     display: flex;
     justify-content: center;
 }
 
-#textCircle:hover, #circle:hover, #ArticlePJ:hover{
+#imgArticle img{
+    z-index: 10;
+    position: relative;
+    top: 30px;
+    left: 330px;
+    width: 25px;
+    height: auto;
+}
+
+#imgArticle img:hover, #close:hover{
     cursor: pointer;
 }
 
-#circle.active:hover{
+#circle.active:hover, #ArticlePJ:hover, #textCircle:hover, .circle:hover{
     cursor: default;
+}
+
+#close{
+    z-index: 4;
+    position: relative;
+    bottom: 0px;
+    padding: 50px 0px;
+}
+
+#close img{
+    width: 30px;
+    height: 30px;
+}
+
+#art{
+    display: none;
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ArticlePhoto{
+    z-index: 4;
+    width: 400px;
+    height: 500px;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: #FDD692;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.664);
+}
+
+#ArticlePhoto img{
+    width: 250px;
+    height: auto;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.664);
+}
+
+#legende{
+    color: #754F44;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#ArticlePJ{
+    align-self: flex-start;
+    margin-left: 20px;;
 }
 
 .tab{

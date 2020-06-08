@@ -1,3 +1,4 @@
+var rellax = new Rellax('.rellax', {center: true});
 
 function activate()
 {

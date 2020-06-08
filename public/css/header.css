@@ -17,8 +17,8 @@ header{
 }
 
 .scrolled{
-    background-color: #754F44;
-    opacity: 0.8;
+    background: #754F44;
+    opacity: 1;
 }
 
 .image{
@@ -40,7 +40,7 @@ header{
 .nav_left{
     position: relative;
     left: 0;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .nav_right{
@@ -101,7 +101,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1080px){
     
     .nav_left{
         position: absolute;

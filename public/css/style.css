@@ -254,8 +254,36 @@ h2{
     padding: 5%;
 }
 
+.guitar{
+    position: absolute;
+    width: 400px;
+    right: 2%;
+    top: 500px;
+}
+
+.synth{
+    position: absolute;
+    width: 400px;
+    right: 2%;
+    top: 1500px;
+}
+
+.bass{
+    position: absolute;
+    width: 500px;
+    right: 2%;
+    top: 2500px;
+}
+
+.gorillaz{
+    position: absolute;
+    width: 400px;
+    right: 5%;
+    top: 3500px;
+}
 
 .name{
+    position: relative;
     font-size: 10vw;
     top: 0;
     left: 0;

@@ -2,14 +2,48 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/header.css">
+        <link rel="stylesheet" href="public/css/hamburgers.css">
+        <link rel="stylesheet" href="public/css/footer.css">
+        <script src="public/js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OUTMOS</title>
     </head>
     <body>
+        <header id="h">
         
-    </body>
-    
-    <footer class = footer>
+            <nav class="menu"> 
+
+                <div class="nav_left" id="nl">
+                        <a href="index.html" class="nav_link">Home</a>
+                        <a href="news.html" class="nav_link">News</a>
+                        <a href="artists.html" class="nav_link">Artists</a>
+                        <a href="reviews.html" class="nav_link">Reviews</a>
+                        <a href="contact.html" class="nav_link">Contact us</a>
+                        <a href="more.html" class="nav_link">More</a>
+                </div>
+
+                <button class="nav_toggle hamburger hamburger--collapse" type="button" id="burg" onclick="activate()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                
+                <div class="nav_right">
+                    <h1><a href="index.html"> <div class="logo"><img src = "public/img/outmos.png" class="image" /></div></a></h1>
+                </div>
+                
+            </nav>
+
+
+        </header> 
+        <main>
+
+            
+        </main>
+        
+        <footer class = footer>
             <div class = footer_parts>
                 <div id = pages>
                     <h2>OUR PAGES</h2>
@@ -49,4 +83,7 @@
                 </div>
             </div>
         </footer>
+    </body>
+    
+    
 </html>

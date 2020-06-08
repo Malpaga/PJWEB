@@ -4,6 +4,7 @@
 
 .footer_parts{
     display: flex;
+    justify-content: space-around;
     margin-left: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -11,6 +12,7 @@
 
 #pages{
     width: 33%;
+    
 }
 
 #liste_pages{

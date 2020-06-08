@@ -78,10 +78,20 @@ h3{
     font-size: 500%;
 }
 
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.max_Height{
+    flex: 1;
+}
+
 .spot{
     width: 100%;
-    padding: 10px 50px;
-    height: 2000px;
+    padding-top: 80px;
+    min-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,12 +100,17 @@ h3{
 .P1{
     flex-direction: column;
     color: white;
-    text-shadow: 0px 0px 5px #ff0000;
+    
     background-image: url('https://wallpaperaccess.com/full/1403827.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+.spot_title{
+    text-shadow: 0px 0px 5px #ff0000;
+    padding-bottom: 80px;
 }
 
 .P2{
@@ -109,19 +124,20 @@ h3{
     background-size: cover;
 }
 
-.P2 h3{
-    text-shadow: 0px 0px 5px #ff0000;
+.circled{
+    shape-outside: circle(50%);
 }
 
 .article{
-    height: 300px;
-    width: 300px;
-    
+    height: 250px;
+    width: 70%;
     color: black;
-    background-color: white;
+    background-color: rgba(19, 15, 64, 1);
     position: relative;
-    padding: 20px;
+    z-index: 0;
+    padding: 40px 50px;
     align-self: flex-start;
+    justify-self: flex-end;
 }
 
 h1{

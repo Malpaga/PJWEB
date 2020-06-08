@@ -5,6 +5,10 @@
     src: url("public/fonts/LEMONMILK-Light.otf");
 }
 
+header{
+    z-index: 10 ;
+}
+
 #h{
     position: fixed;
     top: 0;
@@ -84,10 +88,14 @@
     }
     .image{
         position: relative;
-        right: 93px;
+        right: 94px;
         border-radius: 100px;
         transition: all 0.5s ease-in-out;
     }
+}
+
+@media only screen and (max-width: 1020px){
+    
     .nav_left{
         position: absolute;
         top: 0;

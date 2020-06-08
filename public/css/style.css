@@ -53,8 +53,8 @@ h1{
 
 .welcome-title{
     font-weight: 300;
-    font-size: 500%;
-    margin-bottom: 100px;
+    font-size: 70px;
+    margin-bottom: 70px;
 }
 
 h2{
@@ -65,9 +65,13 @@ h2{
 .welcome{
     padding-top: 10%;
     margin-top: 150px;
-    margin-bottom: 500px;
+    margin-bottom: 400px;
     
     text-align: center;  
+}
+
+.seq-arrow{
+    display: none;
 }
 
 .seq-link{
@@ -121,6 +125,7 @@ h2{
 }
 
 #circle{
+    display: block;
     position: relative;
     z-index: 1;
     width:500px;
@@ -135,13 +140,14 @@ h2{
 
 #circle.active{
     position: relative;
-    width:3000px;
-    height: 3000px;
+    width:5000px;
+    height: 5000px;
     top: 50%;
     left:50%;
     margin-left:-1000px;
     margin-top:-1000px;
     opacity: 1;
+    transition:all 1s ease-in-out;
 }
 
 #ArticlePJ{
@@ -151,7 +157,7 @@ h2{
 }
 
 #textCircle{
-    margin-top : 50%;
+    margin-top : 45%;
     margin-left: 45%;
     color: black;
     font-size: 22px;
@@ -180,7 +186,8 @@ h2{
     z-index: 4;
     position: relative;
     bottom: 0px;
-    padding: 50px 0px;
+    padding: 20px 0px;
+    margin-bottom: 100px;
 }
 
 #close img{
@@ -201,8 +208,8 @@ h2{
 
 #ArticlePhoto{
     z-index: 4;
-    width: 400px;
-    height: 500px;
+    width: 30%;
+    height: 30vw;
     align-self: flex-end;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -215,8 +222,8 @@ h2{
 }
 
 #ArticlePhoto img{
-    width: 250px;
-    height: auto;
+    height: 70%;
+    width: auto;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.664);
 }
 
@@ -280,3 +287,23 @@ h2{
     background:  #C16200;
 }
 
+@media only screen and (max-width: 1050px){
+    .seq-link{
+        display: none;
+    }
+    .seq-arrow{
+        display: flex;
+        margin: auto;
+        width: 100px;
+        padding: 20px;
+        background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(249, 202, 36, 0.6) 50%);
+        background-size: 200%;
+        border-radius: 10rem;
+        transition: background-position 1s ease-in-out;
+    }
+    .seq-arrow:hover{
+        background-position: -100%;
+    }
+    .arrow{
+    }
+}

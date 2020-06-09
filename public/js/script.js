@@ -18,7 +18,6 @@ function activate()
 
 window.onscroll = function()
 {
-    
     if (document.documentElement.scrollTop > 80) { 
         document.getElementById('h').className = "scrolled";
     } else {

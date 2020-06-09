@@ -6,11 +6,8 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
-        <script src="public/js/script.js"></script>
-        <script src="public/js/rellax.min.js"></script>
-        <script>
-            var rellax = new Rellax('.rellax');
-        </script>
+        <script defer src="public/js/script.js"></script>
+        <script src="public/js/rellax.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>OUTMOS</title>
@@ -64,8 +61,8 @@
                     <div id="art">
                         <h2 id="ArticlePJ">Who is Pearl Jam ? </h2>
                         <p id="ArticlePJ">Pearl Jam is a group </p>
-                        <div id="ArticlePhoto">
-                            <img src = public/img/EddieVedder.jpg>
+                        <div id="ArticlePhoto" class="rellax" data-rellax-speed="1">
+                            <img class="rellax" data-rellax-speed="1" src = public/img/EddieVedder.jpg>
                             <p id="legende">Eddie Vedder</p>
                         </div>
                         <div id="close" onclick="closing()"><img src = "public/img/Cross.png"></div>

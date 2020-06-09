@@ -7,8 +7,8 @@
 }
 
 .review{
-    max-width: 600px;
-    max-height: 300px;
+    width: 510px;
+    height: auto;
     background: white;
     border-radius: 2rem;
     margin: 50px 50px;
@@ -22,18 +22,17 @@
     overflow: hidden;
     width: 150px;
     height: 150px;
-    box-shadow: 10px 5px 20px black;
+    box-shadow: 5px 5px 10px black;
     margin-top: -40px;
     margin-left: -15px;
     border-radius: 50%;
-    background-position: center;
-    background-size: cover;
 }
 
 .rev_box{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 30px 0;
     top: -80px !important;
     position: relative;
     width: 100%;
@@ -54,12 +53,24 @@
     text-shadow: 0 0 10px white;
 }
 
-.rev_box .text{
-    margin-left: 30%;
+.rev_box .t_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
     margin-right: 10%;
     color: black;
     font-size: 120%;
     text-align: right;
+}
+
+.t_content .date, .t_content .text{
+    color: black;
+}
+
+.t_content .date{
+    font-size: 70%;
+    margin-right: 10px;
 }
 
 .rev_box .score{
@@ -71,6 +82,7 @@
 
 .rev_box .score .outof100{
     color: black;
+    margin-top: 20px;
     margin-left: 10px;
     font-size: 110%;
     font-weight: 700;
@@ -79,6 +91,8 @@
 
 .rev_box .rating{
     width: 60%;
+    color: black;
+    text-align: start;
     transition: all 1s ease-in-out;
 }
 
@@ -94,6 +108,10 @@
 .meter span {
     display: block;
     height: 100%;
+    font-size: small;
+    text-align: center;
+    color: black;
+    line-height: 13px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
@@ -114,3 +132,158 @@
 .red span {
     background-color: #f0a3a3;
 }
+
+input, textarea{
+    color: black;
+    padding: 8px;
+    border-radius: 1rem;
+    border-style: none;
+    box-shadow: 1px 1px 10px black;
+}
+
+.rev_form{
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 50px;
+}
+
+.rev_form h4{
+    font-size: 200%;
+    margin: 20px;
+}
+
+.add_review{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#rev_cont{
+    width: 100%;
+}
+
+.names{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.image_input{
+    display: flex;
+    height: 30px;
+}
+
+.image_input input{
+    box-shadow: none;
+    width: auto;
+}
+
+.rating_input{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.rating_input label{
+    margin-bottom: 20px;
+}
+
+.select_range{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=range]::-moz-range-track{
+    
+    background-color: #EC7357;
+
+}
+
+.button_line{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.d_button{
+    transform-origin: 50% 50%;
+    color: white;
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.d_button:hover{
+    color: #EC7357;
+    background: white;
+}
+
+.d_button:active{
+    letter-spacing: 2px;
+}
+
+
+.d_button:after{
+    content: "SUBMIT";
+}
+
+.clicked{
+    width: 40px;
+    border-color: transparent;
+    border-width: 3px;
+    font-size: 0;
+    
+    border-left-color: white;
+    animation: rotating 2s 0.2s linear infinite;
+}
+
+.clicked:after{
+    content: "";
+}
+
+.clicked:hover{
+    background: none;
+    cursor: default;
+}
+
+.done{
+    font-size: 12px;
+    color: #EC7357;
+    border: none;
+    background: white;
+}
+
+.done:after{
+    content: "done !";
+}
+
+.done:hover{
+    cursor: default;
+}
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+

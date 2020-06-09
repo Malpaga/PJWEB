@@ -79,15 +79,23 @@ header{
     cursor: pointer;
 }
 
+.active{
+    
+}
+
+.hidden{
+    
+}
+
 @media only screen and (max-width: 1250px){
     .nav_right{
-        width: 72px;
+        width: 70px;
         object-fit: cover;
         transition: all 0.5s ease-in-out;
     }
     .image{
         position: relative;
-        right: 97px;
+        right: 94px;
         border-radius: 100px;
         transition: all 0.5s ease-in-out;
     }
@@ -102,7 +110,6 @@ header{
         padding-top: 72px;
         margin: 0;
         width: 200px;
-        height: 100vh;
         transform: translateX(-100%);
         background-color: #754F44;
         opacity: 0.8;
@@ -124,7 +131,8 @@ header{
     .hidden{
         transform: translateX(-100%);
     }
-    .hamburger, .hamburger-box{display: inline-block;}
+    .hamburger{display: inline-block;}
+    .hamburger-box{display: inline-block;}
     .hamburger-inner{display: block;}
 }
 

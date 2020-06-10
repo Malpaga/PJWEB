@@ -289,5 +289,5 @@ input[type=range]::-moz-range-track{
     to {
       transform: rotate(360deg);
     }
-  }
+}
 

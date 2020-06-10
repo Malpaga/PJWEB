@@ -1,46 +1,288 @@
-window.onload=function(){
-    var bt = document.querySelectorAll(".drum_button");
-    bt.forEach(element=>{element.onclick=function(){
-        element.classList.toggle("on");
-    }})
+
+
+var sequencer = document.getElementById('sequencer_container'); 
+
+var drum1 = document.createElement('audio');
+drum1.src="public/sound/snare01.ogg";
+drum1.type = "audio/ogg";
+drum1.className = "drum";
+
+var drum2 = document.createElement('audio');
+drum2.src="public/sound/clap01.ogg";
+drum2.type = "audio/ogg";
+drum2.className = "drum";
+
+var drum3 = document.createElement('audio');
+drum3.src="public/sound/kick01.ogg";
+drum3.type = "audio/ogg";
+drum3.className = "drum";
+
+sequencer.appendChild(drum1);
+sequencer.appendChild(drum2);
+sequencer.appendChild(drum3);
+
+const drums = [drum1, drum2, drum3];
+
+var drums_line1 = document.createElement("div");
+drums_line1.className = "drum_line";
+
+var drums_line2 = document.createElement("div");
+drums_line2.className = "drum_line";
+
+var drums_line3 = document.createElement("div");
+drums_line3.className = "drum_line";
+
+var drum_cont = document.createElement("div");
+drum_cont.className = "drums_container";
+
+drum_cont.appendChild(drums_line1);
+drum_cont.appendChild(drums_line2);
+drum_cont.appendChild(drums_line3);
+
+
+
+var C3, D3, E3, F3, G3, A3, B3;
+
+C3 = document.createElement("audio");
+C3.type = "audio/ogg";
+C3.src = "public/sound/C3.ogg";
+C3.className = "synth";
+
+D3 = document.createElement("audio");
+D3.type = "audio/ogg";
+D3.src = "public/sound/D3.ogg";
+D3.className = "synth";
+
+E3 = document.createElement("audio");
+E3.type = "audio/ogg";
+E3.src = "public/sound/E3.ogg";
+E3.className = "synth";
+
+F3 = document.createElement("audio");
+F3.type = "audio/ogg";
+F3.src = "public/sound/F3.ogg";
+F3.className = "synth";
+
+G3 = document.createElement("audio");
+G3.type = "audio/ogg";
+G3.src = "public/sound/G3.ogg";
+G3.className = "synth";
+
+A3 = document.createElement("audio");
+A3.type = "audio/ogg";
+A3.src = "public/sound/A3.ogg";
+A3.className = "synth";
+
+B3 = document.createElement("audio");
+B3.type = "audio/ogg";
+B3.src = "public/sound/B3.ogg";
+B3.className = "synth";
+
+const tones = [C3, D3, E3, F3, G3, A3, B3];
+
+var synth_cont = document.createElement("div");
+synth_cont.className = "synth_container";
+
+var s_line1, s_line2, s_line3, s_line4, s_line5, s_line6, s_line7;
+
+
+
+s_line1 = document.createElement("div");
+s_line1.className = "synth_line";
+synth_cont.appendChild(s_line1);
+
+s_line2 = document.createElement("div");
+s_line2.className = "synth_line";
+synth_cont.appendChild(s_line2);
+
+s_line3 = document.createElement("div");
+s_line3.className = "synth_line";
+synth_cont.appendChild(s_line3);
+
+s_line4 = document.createElement("div");
+s_line4.className = "synth_line";
+synth_cont.appendChild(s_line4);
+
+s_line5 = document.createElement("div");
+s_line5.className = "synth_line";
+synth_cont.appendChild(s_line5);
+
+s_line6 = document.createElement("div");
+s_line6.className = "synth_line";
+synth_cont.appendChild(s_line6);
+
+s_line7 = document.createElement("div");
+s_line7.className = "synth_line";
+synth_cont.appendChild(s_line7);
+
+var timeNb = 16;
+
+init_drums();  
+init_synths();
+
+function init_drums(){
+    for(let i=0; i<timeNb; i++)
+    {
+        let but1 = document.createElement("button");
+        but1.type = "button";
+        but1.className = "drum_button";
+
+        let but2 = document.createElement("button");
+        but2.type = "button";
+        but2.className = "drum_button";
+
+        let but3 = document.createElement("button");
+        but3.type = "button";
+        but3.className = "drum_button";
+
+        drums_line1.appendChild(but1);
+        drums_line2.appendChild(but2);
+        drums_line3.appendChild(but3);
+    }
+    sequencer.appendChild(drum_cont);
 }
 
-function reset_bt(){
+function init_synths(){
+    for(let i=0; i<timeNb; i++)
+    {
+        let but1 = document.createElement("button");
+        but1.type = "button";
+        but1.className = "synth_button";
+
+        let but2 = document.createElement("button");
+        but2.type = "button";
+        but2.className = "synth_button";
+
+        let but3 = document.createElement("button");
+        but3.type = "button";
+        but3.className = "synth_button";
+
+        let but4 = document.createElement("button");
+        but4.type = "button";
+        but4.className = "synth_button";
+
+        let but5 = document.createElement("button");
+        but5.type = "button";
+        but5.className = "synth_button";
+
+        let but6 = document.createElement("button");
+        but6.type = "button";
+        but6.className = "synth_button";
+
+        let but7 = document.createElement("button");
+        but7.type = "button";
+        but7.className = "synth_button";
+
+        s_line1.appendChild(but1);
+        s_line2.appendChild(but2);
+        s_line3.appendChild(but3);
+        s_line4.appendChild(but4);
+        s_line5.appendChild(but5);
+        s_line6.appendChild(but6);
+        s_line7.appendChild(but7);
+        
+    }
+    sequencer.appendChild(synth_cont);
+}
+
+var bt = document.querySelectorAll(".drum_button");
+bt.forEach(element=>{element.onclick=function(){
+    element.classList.toggle("on");
+}})
+bt = document.querySelectorAll(".synth_button");
+bt.forEach(element=>{element.onclick=function(){
+    element.classList.toggle("on");
+}})
+
+const drum_rows = document.getElementsByClassName('drum_line');
+const synth_rows = document.getElementsByClassName('synth_line');
+
+let index = 0;
+
+var delay = 250;
+
+var int;
+var looping = false;
+
+function start_loop(){
+    if(looping == false)
+    {
+        int = setInterval(main_Loop, delay);
+        looping = true;
+    }
+}
+
+function stop_loop(){
+    if(looping == true)
+    {
+        clearInterval(int);
+        index = 0;
+        past();
+        looping = false;
+    }
+}
+
+function reset_loop(){
     var bt = document.querySelectorAll(".drum_button");
+    bt.forEach(element=>{
+        element.classList.remove("on");
+    })
+    bt = document.querySelectorAll(".synth_button");
     bt.forEach(element=>{
         element.classList.remove("on");
     })
 }
 
+
 function past(){
     var bt = document.querySelectorAll(".drum_button");
     bt.forEach(element=>{
         element.classList.remove("current");
+        element.classList.remove("played");
+    })
+    bt = document.querySelectorAll(".synth_button");
+    bt.forEach(element=>{
+        element.classList.remove("current");
+        element.classList.remove("played");
     })
 }
 
-const drums = document.getElementsByClassName('drum');
-const rows = document.getElementsByClassName('drum_line');
-
-let index = 0;
-
-var delay = 300;
-
-var int = setInterval(Loop, delay);
-
-function Loop(){
-    console.log("step");
-    index = index%8;
+function main_Loop(){
+    
+    index = index%timeNb;
     past();
-    for (let i=0; i < rows.length; i++){
-        let beat = drums[i],
-        row = rows[i];
-        is_on = row.querySelector('button:nth-child(' + (index+1) + ')');
-        
-        is_on.classList.add("current");
-        if (is_on.classList.contains('on')){beat.play();}
-    }
+    beat_Loop();
+    synth_Loop();
     index++;
+}
+
+function beat_Loop(){
+    for (let i=0; i < drum_rows.length; i++){
+        let beat = drums[i],
+        drum_row = drum_rows[i];
+        is_on = drum_row.querySelector('button:nth-child(' + (index+1) + ')');
+        is_on.classList.add("current");
+        if (is_on.classList.contains('on')){
+            beat.play();
+            is_on.classList.remove("current");
+            is_on.classList.add("played");
+        }
+    }
+    
+}
+
+function synth_Loop(){
+    for (let i=0; i < synth_rows.length; i++){
+        let tone = tones[i],
+        synth_row = synth_rows[i];
+        is_on = synth_row.querySelector('button:nth-child(' + (index+1) + ')');
+        is_on.classList.add("current");
+        if (is_on.classList.contains('on')){
+            tone.play();
+            is_on.classList.remove("current");
+            is_on.classList.add("played");
+        }
+    }
 }
 
 /* var canvas1 = document.getElementById('First_player');

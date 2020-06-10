@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 
-
-
-
-.sequencer_container{
+#sequencer_container{
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
     width: 100%;
     margin-top: 200px;
     margin-left: auto;
@@ -13,20 +10,34 @@
     margin-bottom: 50px;
 }
 
-.drum_container{
-    width: 200px;
+#sequencer_container > div{
+    margin-bottom: 40px;
 }
+
+.synth_line{
+    margin-top: 10px;
+}
+
+.synth_line button{
+    margin-left: 6px;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border: 1px solid black;
+}
+
 
 .drum_line{
     margin-top: 10px;
 }
 
-.drum_line button{
-    margin-left: 5px;
+.drum_line button, .synth_line button{
+    margin-left: 6px;
     width: 30px;
     height: 30px;
     border-style: none;
     border: 1px solid black;
+    transition: all 0.1s linear;
 }
 
 button:hover{
@@ -34,18 +45,21 @@ button:hover{
     cursor: pointer;
 }
 
+
 .on{
-    background-color: blue;
+    background-color: rgb(40, 40, 109);
 }
 
 .current{
-    background-color: green !important;
+    background-color: green;
+}
+
+.played{
+    background-color: yellow !important;
 }
 
 /* canvas{
-=======
 canvas{
->>>>>>> d74fc1ce5022b83322dbe6082ee0002a2c8e948f
     border: 1px solid black;
 }
 

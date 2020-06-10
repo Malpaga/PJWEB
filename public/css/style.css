@@ -32,7 +32,7 @@ main{
 
 body{
     background:  #EC7357;
-    background-image: linear-gradient(to right, rgb(250, 188, 174) ,rgb(236, 115, 87));
+    background-image: linear-gradient(to right, rgb(250, 145, 121) ,rgb(236, 115, 87));
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;

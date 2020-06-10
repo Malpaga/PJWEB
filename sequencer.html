@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="public/css/sequencer.css">
         <script defer src="public/js/script.js"></script>
         <script src="public/js/rellax.js"></script>
-        <script src="public/js/sequencer.js"></script>
+        <script defer src="public/js/sequencer.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OUTMOS</title>
     </head>
@@ -42,47 +42,13 @@
 
         </header> 
         <main>
-            <div class="sequencer_container">
-                <div class="drums_container">
-                    <audio src="public/sound/snare01.ogg" type="audio/ogg" class="drum"></audio>
-                    <div class="drum_line">
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                    </div>
-                    <audio src="public/sound/clap01.ogg" type="audio/ogg" class="drum"></audio>
-                    <div class="drum_line">
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                    </div>
-                    <audio src="public/sound/kick01.ogg" type="audio/ogg" class="drum"></audio>
-                    <div class="drum_line">
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                        <button type="button" class="drum_button"></button>
-                    </div>
-                </div>
-
+            <div id="sequencer_container">
+                
             </div>
             <div class="reset_bt" style="width: 100%; text-align: center;">
                 <button type="button" onclick="start_loop()" style="width:60px; color: black; padding: 2px 5px;">Play</button>
-                <button type="button" onclick="reset_bt()" style="width:60px; color: black; padding: 2px 5px;">Reset</button>
+                <button type="button" onclick="stop_loop()" style="width:60px; color: black; padding: 2px 5px;">Stop</button>
+                <button type="button" onclick="reset_loop()" style="width:60px; color: black; padding: 2px 5px;">Clear</button>
             </div>
             <!-- <canvas class="select" id="First_player" width="150" height="150"></canvas>
             <canvas class="select" id="Second_player" width="150" height="150"></canvas>
@@ -92,7 +58,6 @@
             <button id="B_Start" type="button" onclick="play_audio()" style="width: 50px; color: black;">Play !</button>
             <button id="B_Stop" type="button" onclick="stop_audio()" style="width: 50px; color: black;">Stop !</button>
             </div> -->
-
         </main>
         
         <footer class = footer>

@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
+        <link rel="stylesheet" href="public/css/about.css">
         <script defer src="public/js/script.js"></script>
         <script src="public/js/rellax.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>OUTMOS</title>
+        <title class = title>OUTMOS</title>
     </head>
-    <body id="index_body">
+
+    <body id="bannière">
         <header id="h">
         
             <nav class="menu"> 
@@ -23,7 +23,7 @@
                         <a href="artists.html" class="nav_link">Artists</a>
                         <a href="reviews.html" class="nav_link">Reviews</a>
                         <a href="contact.html" class="nav_link">Contact Us</a>
-                        <a href="about.html" class="nav_link">About Us</a>
+                        <a href="about.html" class="nav_link">About us</a>
                 </div>
 
                 <button class="nav_toggle hamburger hamburger--collapse" type="button" id="burg" onclick="activate()">
@@ -33,48 +33,43 @@
                 </button>
                 
                 <div class="nav_right">
-                    <h1><a href="index.html"> <div class="logo"><img  src = "public/img/outmos.png" class="image" /></div></a></h1>
+                    <h1><a href="index.html"> <img src = "public/img/outmos.png" class="image" id="logo"/></a></h1>
                 </div>
                 
             </nav>
 
-
+            
         </header> 
         
         <main>
-            <div>
-                <div class="welcome">
-                    <h1 class="welcome-title">WELCOME ON STAGE</h1>
-                    <h2 class="welcome-sub">
-                        <a href="sequencer.html" class="seq-link">Your journey starts here</a>
-                        <a href="sequencer.html" class="seq-arrow"><img class="arrow" src="public/img/right arrow.png"></a>
-                    
-                    </h2>
-                    
+            <h1 class="title">ABOUT</h1>
+            <div class=about id="about">
+                <div id= "school">
+                    <div class="imgAbout"><img src = "public/img/efrei_logo.png"></div>
+                    <h3 class="rellax" data-rellax-speed="0.5">The School</h3>
+                    <p>Efrei Paris is an Engineering school specialized in the digital technologies.</p>
                 </div>
-                
-                <div class="spot" id="P1">
-                    <div id="circle">
-                        <p id = textCircle>BAND OF THE DAY </p>
-                        <div id = "imgArticle"><img src = "public/img/Plus1.png" onclick="expand()"></div>
+                <div id="project">
+                    <div class="imgAbout" ><img src = "public/img/Project.jpg"></div>
+                    <h3 class="rellax" data-rellax-speed="0.5">The Project</h3>
+                    <P>The goal of this project was to create a website. We had the choice of the subject. We only had some </P>
+                </div>
+                <div id="we">
+                    <div id="Alix">
+                        <div class="imgAbout" ><img src = "public/img/Alix.jpg"></div>
+                        <h3 class="rellax" data-rellax-speed="0.5">Alix Stirling</h3>
+                        <p>Bacon ipsum dolor amet fatback landjaeger chicken jowl prosciutto rump turkey jerky capicola tail pork loin ball tip. Salami brisket flank prosciutto alcatra pastrami venison rump beef ribs andouille tenderloin. Ham hock meatloaf short ribs chuck. Flank tongue ground round bresaola doner boudin landjaeger frankfurter short loin sirloin picanha. Jerky brisket chuck alcatra strip steak ball tip ribeye shank pork chop swine.</p>
                     </div>
-                    <div id="art">
-                        <div id ="artPhoto">
-                            <div id="article">
-                                <h2>Pearl Jam</h2>
-                                <p id="ArticlePJ">Pearl Jam is one of the most well-known grunge band. The group is composed of Eddie Vedder (singer), Jeff Ament (bassist), Moke McCready (lead guitarist) Stone Gossard (guitarist) and finally Matt Cameron (drummer).</p>
-                                <p id="ArticlePJ">They released their first album, <i>Ten</i>, in 1991. Back then, grunge music was starting to take off. With Nirvana providing a punk style, Soundgarden an alternative style and Alice in Chains a heavy metal style, Pearl Jam gave grunge a classic rock feel similar to The Who and Neil Young.</p>
-                                <p id="ArticlePJ">After this widely acclaimed first album, Pearl Jam then came back with <i>Vs.</i> in 1993. It also was a huge success and ended up to be seven times platinum. This album features 12 powerful songs of which are two ballads <i>Daughter</i> and <i>Ederly Woman Behind the Counter in a Small Town</i></p>
-                                <p id="ArticlePJ">Finally, Pearl Jam made 11 studio albums in total. The last one being <i>Gigaton</i>, released the 27th of March this year.</p>
-                            </div>
-                            <div id="ArticlePhoto" class="rellax" data-rellax-speed="-1">
-                                <img class="rellax" data-rellax-speed="0" src = public/img/EddieVedder.jpg>
-                                <p id="legende">Eddie Vedder</p>
-                            </div>
-                        </div>
-                        <div id="close" onclick="closing()"><img src = "public/img/Cross.png"></div>
+                    <div id="Philippe">
+                        <div class="imgAbout"><img src = "public/img/Philippe.png"></div>
+                        <h3 class="rellax" data-rellax-speed="0.5">Philippe Mangeard</h3>
+                        <p>Bacon ipsum dolor amet fatback landjaeger chicken jowl prosciutto rump turkey jerky capicola tail pork loin ball tip. Salami brisket flank prosciutto alcatra pastrami venison rump beef ribs andouille tenderloin. Ham hock meatloaf short ribs chuck. Flank tongue ground round bresaola doner boudin landjaeger frankfurter short loin sirloin picanha. Jerky brisket chuck alcatra strip steak ball tip ribeye shank pork chop swine.</p>
                     </div>
-                    
+                    <div id="Lilian">
+                        <div class="imgAbout"><img src = "public/img/Lilian.jpg"></div>
+                        <h3 class="rellax" data-rellax-speed="0.5">Lilian Geny</h3>
+                        <p>Bacon ipsum dolor amet fatback landjaeger chicken jowl prosciutto rump turkey jerky capicola tail pork loin ball tip. Salami brisket flank prosciutto alcatra pastrami venison rump beef ribs andouille tenderloin. Ham hock meatloaf short ribs chuck. Flank tongue ground round bresaola doner boudin landjaeger frankfurter short loin sirloin picanha. Jerky brisket chuck alcatra strip steak ball tip ribeye shank pork chop swine.</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -119,5 +114,5 @@
             </div>
         </footer>
     </body>
-    
+
 </html>

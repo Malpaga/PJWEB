@@ -81,6 +81,10 @@ function submit_form(){
             jauge.className = "meter orange";
             var spanned = document.createElement("span");
             spanned.style.width = document.getElementById('score_range').value + '%';
+            if(document.getElementById('score_range').value == 100){
+                spanned.style.borderTopRightRadius = "20px";
+                spanned.style.borderBottomRightRadius = "20px";
+            }
             var grade = document.createElement("p");
             grade.className = "outof100";
             grade.innerHTML = document.getElementById('score_range').value + "/100";

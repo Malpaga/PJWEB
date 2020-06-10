@@ -40,7 +40,9 @@ function submit_form(){
             imageBack.className="picture";
             const newFile = document.getElementById('myFile').files;
             if(newFile.length === 0) {
-                imageBack.style.background = getRandomColor();
+                var color = getRandomColor();
+                imageBack.style.background = color;
+                imageBack.style.border = "1px solid" + color;
                 imageBack.style.width = "130px";
                 imageBack.style.height = "130px";
             }else{

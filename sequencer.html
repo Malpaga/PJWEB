@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
-        <script src="public/js/script.js"></script>
+        <link rel="stylesheet" href="public/css/sequencer.css">
+        <script defer src="public/js/script.js"></script>
+        <script src="public/js/rellax.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OUTMOS</title>
     </head>
@@ -39,12 +41,17 @@
 
         </header> 
         <main>
-            <canvas id="First_player"> </canvas>
-            <canvas id="Second_player"></canvas>
-            <canvas id="Third_player"> </canvas>
+            <canvas class="select" id="First_player" width="150" height="150"></canvas>
+            <canvas class="select" id="Second_player" width="150" height="150"></canvas>
+            <canvas class="select" id="Third_player" width="150" height="150"></canvas>
             
-            <input id="Loop1" type="button" onclick="play_audio()">  </input>
-            <audio id="audio1" src="public/sound/Vulfpeck-Outro.mp3"></audio>
+            <div class="controls">
+            <button id="B_Start" type="button" onclick="play_audio()" style="width: 50px; color: black;">Play !</button>
+            <button id="B_Stop" type="button" onclick="stop_audio()" style="width: 50px; color: black;">Stop !</button>
+            </div>
+            <audio id="Beat1" src="public/sound/Beat 1.wav"></audio>
+            <audio id="Beat2" src="public/sound/Beat 2.wav"></audio>
+            <audio id="Beat3" src="public/sound/Beat 3.wav"></audio>
 
             <script src="public/js/sequencer.js"></script>
 

@@ -1,0 +1,40 @@
+
+
+
+
+canvas{
+    border: 1px solid black;
+}
+
+.select:hover{
+    cursor: pointer;
+}
+
+#First_player
+{
+    position: absolute;
+    
+    top:30%;
+    left:25%;
+}
+
+#Second_player
+{
+    position: absolute;
+    top:30%;
+    left:35%;
+}
+
+#Third_player
+{
+    position:absolute;
+    top:30%;
+    left:45%
+}
+
+.controls
+{
+    position: absolute;
+    top:60%;
+    left:30%;
+}

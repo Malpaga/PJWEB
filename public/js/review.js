@@ -65,7 +65,7 @@ function submit_form(){
             var newDate = document.createElement("div");
             newDate.className="date";
             var today = new Date();
-            newDate.innerHTML = String(today.getDate()).padStart(2, '0') + '/' + String(today.getMonth()).padStart(2, '0') + '/' + today.getFullYear();
+            newDate.innerHTML = String(today.getDate()).padStart(2, '0') + '/' + String(today.getMonth()+1).padStart(2, '0') + '/' + today.getFullYear();
             newContent.appendChild(newDate);
 
             var rev_text = document.createElement("div");

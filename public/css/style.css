@@ -360,34 +360,4 @@ h2{
     .seq-arrow:hover{
         background-position: -100%;
     }
-    .arrow{
-    }
-}
-
-#First_player
-{
-    position: absolute;
-    top:30%;
-    left:25%;
-}
-
-#Second_player
-{
-    position: absolute;
-    top:30%;
-    left:30%;
-}
-
-#Third_player
-{
-    position:absolute;
-    top:30%;
-    left:35%
-}
-
-#Loop1
-{
-    position: absolute;
-    top:50%;
-    left:30%;
 }

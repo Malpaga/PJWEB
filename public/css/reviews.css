@@ -147,7 +147,7 @@ input, textarea{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 50px;
+    margin: 20px;
 }
 
 .rev_form h4{
@@ -157,7 +157,8 @@ input, textarea{
 
 .add_review{
     height: 500px;
-    width: 400px;
+    width: 80vw;
+    max-width: 400px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -165,7 +166,7 @@ input, textarea{
 }
 
 #rev_cont{
-    width: 100%;
+    width: 90%;
 }
 
 .names{
@@ -177,7 +178,8 @@ input, textarea{
 
 .image_input{
     display: flex;
-    height: 30px;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .image_input input{

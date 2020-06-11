@@ -24,13 +24,13 @@ sequencer.appendChild(drum3);
 const drums = [drum1, drum2, drum3];
 
 var drums_line1 = document.createElement("div");
-drums_line1.className = "drum_line";
+drums_line1.className = "drum_line dl1";
 
 var drums_line2 = document.createElement("div");
-drums_line2.className = "drum_line";
+drums_line2.className = "drum_line dl2";
 
 var drums_line3 = document.createElement("div");
-drums_line3.className = "drum_line";
+drums_line3.className = "drum_line dl3";
 
 var drum_cont = document.createElement("div");
 drum_cont.className = "drums_container";
@@ -116,7 +116,6 @@ s_line7.className = "synth_line";
 synth_cont.appendChild(s_line7);
 
 var timeNb = 16;
-var newTimeNb = 16;
 
 let but1, but2, but3, but4, but5, but6, but7;
 
@@ -320,7 +319,7 @@ const synth_rows = document.getElementsByClassName('synth_line');
 
 let index = 0;
 
-var delay = 250;
+var delay = 300;
 
 var int;
 var looping = false;
@@ -330,6 +329,18 @@ function start_loop(){
     {
         int = setInterval(main_Loop, delay);
         looping = true;
+        document.getElementById('stb').textContent = "⏸";
+        document.getElementById('stb').onclick = pause_loop;
+    }
+}
+
+function pause_loop(){
+    if(looping == true)
+    {
+        clearInterval(int);
+        looping = false;
+        document.getElementById('stb').textContent = "▶";
+        document.getElementById('stb').onclick = start_loop;
     }
 }
 
@@ -337,10 +348,14 @@ function stop_loop(){
     if(looping == true)
     {
         clearInterval(int);
-        index = 0;
-        past();
-        looping = false;
     }
+    
+    index = 0;
+    past();
+    looping = false;
+    
+    document.getElementById('stb').textContent = "▶";
+    document.getElementById('stb').onclick = start_loop;
 }
 
 function reset_loop(){

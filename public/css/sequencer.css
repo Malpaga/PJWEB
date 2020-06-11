@@ -1,13 +1,16 @@
 
+.seq_title{
+    margin-top: 200px;
+}
+
 #sequencer_container{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
 }
 
 #sequencer_container > div{
@@ -17,15 +20,6 @@
 .synth_line{
     margin-top: 10px;
 }
-
-.synth_line button{
-    margin-left: 6px;
-    width: 30px;
-    height: 30px;
-    border-style: none;
-    border: 1px solid black;
-}
-
 
 .drum_line{
     margin-top: 10px;
@@ -38,24 +32,70 @@
     border-radius: 5px;
     border-style: none;
     border: 1px solid black;
+    transition: all 0.1s linear;
 }
 
-button:hover{
-    background-color: gray;
+.drum_line button{
+    background-color: rgba(245, 245, 245, 0.363);   
+}
+
+.synth_line button{
+    background-color: rgba(216, 191, 216, 0.363);
+}
+
+.drum_line button:hover{
+    background-color: rgba(245, 245, 245, 1);
+    cursor: pointer;
+}
+
+.synth_line button:hover{
+    background-color: rgba(216, 191, 216, 1);
     cursor: pointer;
 }
 
 
 .on{
-    background-color: rgb(40, 40, 109);
+    background-color: rgb(40, 40, 109) !important;
+}
+
+.dl1 .on{
+    background-color: rgb(0, 162, 255) !important;
 }
 
 .current{
-    background-color: green;
+    background-color: green !important;
 }
 
 .played{
     background-color: yellow !important;
+}
+
+
+
+.control_button{
+    border-style: none;
+    width:60px;
+    height: 60px;
+    color: black;
+    padding: 3px 6px;
+    margin: 0px 5px;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 10rem;
+    
+    box-shadow: 2px 2px 5px black;
+}
+
+.control_button:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px black;
+}
+
+.control_button:active{
+    background-color: grey;
+    
+    box-shadow: 2px 2px 10px black;
 }
 
 /* canvas{

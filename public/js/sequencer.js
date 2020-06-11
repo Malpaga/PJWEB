@@ -78,7 +78,45 @@ B3.type = "audio/ogg";
 B3.src = "public/sound/B3.ogg";
 B3.className = "synth";
 
+var C4, D4, E4, F4, G4, A4, B4;
+
+C4 = document.createElement("audio");
+C4.type = "audio/ogg";
+C4.src = "public/sound/C4.ogg";
+C4.className = "synth";
+
+D4 = document.createElement("audio");
+D4.type = "audio/ogg";
+D4.src = "public/sound/D4.ogg";
+D4.className = "synth";
+
+E4 = document.createElement("audio");
+E4.type = "audio/ogg";
+E4.src = "public/sound/E4.ogg";
+E4.className = "synth";
+
+F4 = document.createElement("audio");
+F4.type = "audio/ogg";
+F4.src = "public/sound/F4.ogg";
+F4.className = "synth";
+
+G4 = document.createElement("audio");
+G4.type = "audio/ogg";
+G4.src = "public/sound/G4.ogg";
+G4.className = "synth";
+
+A4 = document.createElement("audio");
+A4.type = "audio/ogg";
+A4.src = "public/sound/A4.ogg";
+A4.className = "synth";
+
+B4 = document.createElement("audio");
+B4.type = "audio/ogg";
+B4.src = "public/sound/B4.ogg";
+B4.className = "synth";
+
 const tones = [C3, D3, E3, F3, G3, A3, B3];
+const tones2 = [C4, D4, E4, F4, G4, A4, B4];
 
 var synth_cont = document.createElement("div");
 synth_cont.className = "synth_container";
@@ -122,7 +160,8 @@ let but1, but2, but3, but4, but5, but6, but7;
 function set_time_8(){
     if(timeNb == 16){
         timeNb = 8;
-        shrink_sequencer(8);
+        shrink_sequencer(8);   
+        init_buttons();
     }
 
     if(timeNb == 32){
@@ -319,7 +358,36 @@ const synth_rows = document.getElementsByClassName('synth_line');
 
 let index = 0;
 
-var delay = 300;
+var delay = 250;
+var bpm = 240;
+var set = 0;
+let gbt  = document.getElementById('gba_bt'), pbt  = document.getElementById('piano_bt');
+gbt.style.backgroundColor = "grey";
+
+
+function updateTempo(val){
+    console.log(val);
+    delay = val;
+    bpm = Math.round(60000/val);
+    document.getElementById('textInput').value = bpm + " bpm";
+    if(looping == true)
+    {
+        pause_loop();
+        start_loop();
+    }
+}
+
+function set_gba(){
+    gbt.style.backgroundColor = "grey";
+    pbt.style.backgroundColor = "white";
+    set = 0;
+}
+
+function set_piano(){
+    gbt.style.backgroundColor = "white";
+    pbt.style.backgroundColor = "grey";
+    set = 1;
+}
 
 var int;
 var looping = false;
@@ -409,8 +477,13 @@ function beat_Loop(){
 
 function synth_Loop(){
     for (let i=0; i < synth_rows.length; i++){
-        let tone = tones[i],
-        synth_row = synth_rows[i];
+        let tone;
+        if(set == 0){
+            tone = tones[i];
+        }else if(set == 1){  
+            tone = tones2[i];
+        }
+        let synth_row = synth_rows[i];
         is_on = synth_row.querySelector('button:nth-child(' + (index+1) + ')');
         is_on.classList.add("current");
         if (is_on.classList.contains('on')){

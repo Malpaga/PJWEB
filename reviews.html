@@ -45,7 +45,7 @@
         </header> 
         
         <main>
-            <h1 class="title">Reviews</h1>
+            <h1 class="title">Last reviews</h1>
             <div class="rev_main" id="rev_main_container">
                 <div class="review">
                     <div class="rellax imgcont">
@@ -272,11 +272,11 @@
                     <div class="rating_input">
                         <label for="score_range">Rate this song/album/artist out of 100 !</label>
                         <div class="select_range">
-                            <p>0</p>
-                            <input type="range" id="score_range" step="5" min="0" max="100">
-                            <p>100</p>
+                            <input type="range" id="score_range" step="5" min="0" max="100" onchange="updateTextInput(this.value);">
+                            <input type="text" id="textInput" value="" style="color: black;margin: 5px;text-align: center; width: 40px; height: 40px; border-radius: 20rem;">
+                    
                         </div>
-                    </div>
+                        </div>
                     
                 </form>
                 <div class="button_line">

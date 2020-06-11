@@ -5,6 +5,10 @@ function but_click(){
     setTimeout(function(){but_validate();}, 2250);
 }
 
+function updateTextInput(val){
+    document.getElementById('textInput').value = val;
+}
+
 function but_validate(){
     console.log('validate');
     document.getElementById('done_button').className = "d_button done";

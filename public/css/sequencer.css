@@ -36,30 +36,38 @@
 }
 
 .drum_line button{
-    background-color: rgba(245, 245, 245, 0.363);   
+    background-color: rgba(228, 81, 81, 0.507);   
 }
 
 .synth_line button{
-    background-color: rgba(216, 191, 216, 0.363);
+    background-color: rgba(182, 102, 182, 0.507);
 }
 
 .drum_line button:hover{
-    background-color: rgba(245, 245, 245, 1);
+    background-color: rgba(228, 81, 81, 1);
     cursor: pointer;
 }
 
 .synth_line button:hover{
-    background-color: rgba(216, 191, 216, 1);
+    background-color: rgba(182, 102, 182, 1);
     cursor: pointer;
 }
 
 
 .on{
-    background-color: rgb(40, 40, 109) !important;
+    background-color: rgb(14, 14, 98) !important;
 }
 
 .dl1 .on{
-    background-color: rgb(0, 162, 255) !important;
+    background-color: rgb(164, 175, 9) !important;
+}
+
+.dl2 .on{
+    background-color: rgb(212, 233, 92) !important;
+}
+
+.dl3 .on{
+    background-color: rgb(212, 98, 31) !important;
 }
 
 .current{
@@ -67,10 +75,8 @@
 }
 
 .played{
-    background-color: yellow !important;
+    border-color: white !important;
 }
-
-
 
 .control_button{
     border-style: none;

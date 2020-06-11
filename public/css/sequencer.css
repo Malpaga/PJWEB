@@ -35,6 +35,7 @@
     margin-left: 6px;
     width: 30px;
     height: 30px;
+    border-radius: 5px;
     border-style: none;
     border: 1px solid black;
     transition: all 0.1s linear;

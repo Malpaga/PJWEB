@@ -61,6 +61,15 @@ input[type=range]::-moz-range-track{
     margin-top: 10px;
 }
 
+.synth_line button{
+    margin-left: 6px;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border: 1px solid black;
+}
+
+
 .drum_line{
     margin-top: 10px;
 }
@@ -106,6 +115,11 @@ input[type=range]::-moz-range-track{
     border-style: none;
     border: 1px solid black;
     transition: all 0.1s linear;
+}
+
+button:hover{
+    background-color: gray;
+    cursor: pointer;
 }
 
 .drum_line button{

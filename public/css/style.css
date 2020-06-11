@@ -23,6 +23,7 @@ body, html{
 
 main{
     min-height: 100%;
+    
 }
 
 #index_body{
@@ -259,6 +260,8 @@ h2{
     width: 50%;
 }
 
+
+
 @media only screen and (max-width: 1050px){
     .seq-link{
         display: none;
@@ -277,3 +280,5 @@ h2{
         background-position: -100%;
     }
 }
+
+

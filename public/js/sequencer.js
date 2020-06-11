@@ -27,7 +27,7 @@ var drums_line1 = document.createElement("div");
 drums_line1.className = "drum_line dl1";
 
 var drums_line2 = document.createElement("div");
-drums_line2.className = "drum_line dl2";
+drums_line2.className = "drum_line dl2 ";
 
 var drums_line3 = document.createElement("div");
 drums_line3.className = "drum_line dl3";
@@ -271,28 +271,25 @@ function expand_sequencer(n){
 
 init_drums();  
 init_synths();
-init_buttons();
 
 function init_drums(){
     for(let i=0; i<timeNb; i++)
     {
-        but1 = document.createElement("button");
+        let but1 = document.createElement("button");
         but1.type = "button";
         but1.className = "drum_button";
 
-        but2 = document.createElement("button");
+        let but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "drum_button";
 
-        but3 = document.createElement("button");
+        let but3 = document.createElement("button");
         but3.type = "button";
         but3.className = "drum_button";
 
         drums_line1.appendChild(but1);
         drums_line2.appendChild(but2);
         drums_line3.appendChild(but3);
-
-        
     }
     sequencer.appendChild(drum_cont);
 }
@@ -300,31 +297,31 @@ function init_drums(){
 function init_synths(){
     for(let i=0; i<timeNb; i++)
     {
-        but1 = document.createElement("button");
+        let but1 = document.createElement("button");
         but1.type = "button";
         but1.className = "synth_button";
 
-        but2 = document.createElement("button");
+        let but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "synth_button";
 
-        but3 = document.createElement("button");
+        let but3 = document.createElement("button");
         but3.type = "button";
         but3.className = "synth_button";
 
-        but4 = document.createElement("button");
+        let but4 = document.createElement("button");
         but4.type = "button";
         but4.className = "synth_button";
 
-        but5 = document.createElement("button");
+        let but5 = document.createElement("button");
         but5.type = "button";
         but5.className = "synth_button";
 
-        but6 = document.createElement("button");
+        let but6 = document.createElement("button");
         but6.type = "button";
         but6.className = "synth_button";
 
-        but7 = document.createElement("button");
+        let but7 = document.createElement("button");
         but7.type = "button";
         but7.className = "synth_button";
 
@@ -340,18 +337,14 @@ function init_synths(){
     sequencer.appendChild(synth_cont);
 }
 
-
-function init_buttons(){
-    var bt = document.querySelectorAll(".drum_button");
-    bt.forEach(element=>{element.onclick=function(){
-        element.classList.toggle("on");
-    }})
-    bt = document.querySelectorAll(".synth_button");
-    bt.forEach(element=>{element.onclick=function(){
-        element.classList.toggle("on");
-    }})
-}
-
+var bt = document.querySelectorAll(".drum_button");
+bt.forEach(element=>{element.onclick=function(){
+    element.classList.toggle("on");
+}})
+bt = document.querySelectorAll(".synth_button");
+bt.forEach(element=>{element.onclick=function(){
+    element.classList.toggle("on");
+}})
 
 const drum_rows = document.getElementsByClassName('drum_line');
 const synth_rows = document.getElementsByClassName('synth_line');

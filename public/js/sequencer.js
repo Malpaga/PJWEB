@@ -271,6 +271,7 @@ function expand_sequencer(n){
 
 init_drums();  
 init_synths();
+init_buttons();
 
 function init_drums(){
     for(let i=0; i<timeNb; i++)
@@ -337,22 +338,33 @@ function init_synths(){
     sequencer.appendChild(synth_cont);
 }
 
-var bt = document.querySelectorAll(".drum_button");
-bt.forEach(element=>{element.onclick=function(){
-    element.classList.toggle("on");
-}})
-bt = document.querySelectorAll(".synth_button");
-bt.forEach(element=>{element.onclick=function(){
-    element.classList.toggle("on");
-}})
+var bt ;
+
+
+function init_buttons(){
+    bt = document.querySelectorAll(".drum_button");
+    bt.forEach(element=>{element.onclick=function(){
+        element.classList.toggle("on");
+    }})
+    bt = document.querySelectorAll(".synth_button");
+    bt.forEach(element=>
+    {
+        element.onclick=function(){
+        element.classList.toggle("on");
+        }
+        if(set == 1){
+            element.style.backgroundColor = "rgba(0, 255, 234, 0.507)";
+        }
+    })
+}
 
 const drum_rows = document.getElementsByClassName('drum_line');
 const synth_rows = document.getElementsByClassName('synth_line');
 
 let index = 0;
 
-var delay = 250;
-var bpm = 240;
+var delay = 360;
+var bpm = 40;
 var set = 0;
 let gbt  = document.getElementById('gba_bt'), pbt  = document.getElementById('piano_bt');
 gbt.style.backgroundColor = "grey";
@@ -361,7 +373,7 @@ gbt.style.backgroundColor = "grey";
 function updateTempo(val){
     console.log(val);
     delay = val;
-    bpm = Math.round(60000/val);
+    bpm = Math.round(60000/(4*val));
     document.getElementById('textInput').value = bpm + " bpm";
     if(looping == true)
     {
@@ -373,12 +385,15 @@ function updateTempo(val){
 function set_gba(){
     gbt.style.backgroundColor = "grey";
     pbt.style.backgroundColor = "white";
+    bt.forEach(element=>{element.style.backgroundColor = "rgba(182, 102, 182, 0.507)"})
     set = 0;
 }
 
 function set_piano(){
     gbt.style.backgroundColor = "white";
     pbt.style.backgroundColor = "grey";
+    bt = document.querySelectorAll(".synth_button");
+    bt.forEach(element=>{element.style.backgroundColor = "rgba(0, 255, 234, 0.507)"})
     set = 1;
 }
 

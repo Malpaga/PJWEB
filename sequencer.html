@@ -10,11 +10,10 @@
         <script defer src="public/js/script.js"></script>
         <script src="public/js/rellax.js"></script>
         <script defer src="public/js/sequencer.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OUTMOS</title>
     </head>
-    <body class="seq_body">
+    <body>
         <header id="h">
         
             <nav class="menu"> 
@@ -42,19 +41,23 @@
 
 
         </header> 
-        <main class="seq_main">
-            <h1 class="seq_title">Let your creativity do the job</h1>
+        <main>
             <div id="sequencer_container">
                 
             </div>
-            <div  style="width: 100%; text-align: center;">
-                <button type="button" class="control_button" onclick="start_loop()" id="stb">▶</button>
-                <button type="button" class="control_button" onclick="stop_loop()">⏹︎</button>
-                <button type="button" class="control_button" onclick="set_time_8()">8</button>
-                <button type="button" class="control_button" onclick="set_time_16()">16</button>
-                <button type="button" class="control_button" onclick="set_time_32()">32</button>
-                <button type="button" class="control_button" onclick="reset_loop()"> ⏏︎</button>
+            <div class="reset_bt" style="width: 100%; text-align: center;">
+                <button type="button" onclick="start_loop()" style="width:60px; color: black; padding: 2px 5px;">Play</button>
+                <button type="button" onclick="stop_loop()" style="width:60px; color: black; padding: 2px 5px;">Stop</button>
+                <button type="button" onclick="reset_loop()" style="width:60px; color: black; padding: 2px 5px;">Clear</button>
             </div>
+            <!-- <canvas class="select" id="First_player" width="150" height="150"></canvas>
+            <canvas class="select" id="Second_player" width="150" height="150"></canvas>
+            <canvas class="select" id="Third_player" width="150" height="150"></canvas>
+            
+            <div class="controls">
+            <button id="B_Start" type="button" onclick="play_audio()" style="width: 50px; color: black;">Play !</button>
+            <button id="B_Stop" type="button" onclick="stop_audio()" style="width: 50px; color: black;">Stop !</button>
+            </div> -->
         </main>
         
         <footer class = footer>

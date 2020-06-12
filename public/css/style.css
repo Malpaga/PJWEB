@@ -23,7 +23,6 @@ body, html{
 
 main{
     min-height: 100%;
-    
 }
 
 #index_body{
@@ -260,8 +259,6 @@ h2{
     width: 50%;
 }
 
-
-
 @media only screen and (max-width: 1050px){
     .seq-link{
         display: none;
@@ -281,4 +278,31 @@ h2{
     }
 }
 
+.social
+{
+    margin-left: 15%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
 
+
+
+.email
+{
+    padding-top: 0.5%;
+
+    margin-left: 15%;
+}
+
+
+.lab
+{
+    
+}
+
+.field
+{
+    color: #000000;
+
+}

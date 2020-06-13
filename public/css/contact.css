@@ -33,7 +33,7 @@ input, textarea{
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    justify-content: space-around;
+    flex: 1 1 0;
 }
 
 .subject{
@@ -57,5 +57,3 @@ input, textarea{
 .button_line{
     margin-bottom: 50px;
 }
-
-

@@ -71,17 +71,17 @@
 }
 
 .artist:nth-child(1){
-    background-image: linear-gradient(to right, rgb(255, 255, 164), rgb(104, 104, 14));
+    background-image: linear-gradient(to right, rgb(180, 180, 62), rgb(104, 104, 14));
 }
 
 .artist:nth-child(2){
-    background-image: linear-gradient(to right, rgb(235, 138, 118), rgb(117, 20, 0));
+    background-image: linear-gradient(to left, rgb(167, 76, 57), rgb(117, 20, 0));
 }
 
 .artist:nth-child(3){
-    background-image: linear-gradient(to right, rgb(226, 162, 99), rgb(126, 63, 0));
+    background-image: linear-gradient(to right, rgb(161, 118, 74), rgb(126, 63, 0));
 }
 
 .artist:nth-child(4){
-    background-image: linear-gradient(to right, rgb(231, 155, 138) ,rgb(207, 79, 50));
+    background-image: linear-gradient(to left, rgb(201, 104, 82) ,rgb(207, 79, 50));
 }

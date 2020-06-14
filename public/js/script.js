@@ -43,3 +43,10 @@ function closing(){
     document.getElementById('art').style.display = "none";
     document.getElementById('textCircle').style.opacity = "1";
 }
+
+function albumhover()
+{
+    this.opacity = 0.5;
+    
+    document.getElementsByClassName("Albumtext1").opacity = 1;  
+}

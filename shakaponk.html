@@ -6,14 +6,9 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/hamburgers.css">
         <link rel="stylesheet" href="public/css/footer.css">
-        <link rel="stylesheet" href="public/css/contact.css">
-        <link rel="stylesheet" href="public/css/reviews.css">
-        <script defer src="public/js/script.js"></script>
-        <script defer src="public/js/form.js"></script>
-        <script src="public/js/rellax.js"></script>
+        <script src="public/js/script.js"></script>
         <title class = title>OUTMOS</title>
     </head>
-
     <body>
         <header id="h">
         
@@ -44,42 +39,69 @@
         </header> 
         
         <main>
-            <h1 class="title">Contact us</h1>
-            <div class="subtitles">
-                <h2>You want to leave us a message or a review ?</h2>
-                <h2>You can contact us via this form! You just need to fill it in.</h2>
-                <h2>Thank you!</h2>
+            <div id="Vulfpeck" style="background-image: url('public/img/shakaponk.jpg');"> <h1 class="title" >Shaka Ponk</h1> </div>
+            <div class="bandphoto">
+                   
+                
             </div>
 
-            <form class="form_contact"> 
-                <div class="names">
-                    <div class="name">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="Name" placeholder="Name" required>
-                    </div>
-
-                    <div class="surname">
-                        <label for="surname"></label>
-                        <input type="text" id="surname" name="Surname" placeholder="Surname" required>
-                    </div>
-                    <div class="email">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="Email" placeholder="Your e-mail" required>
-                    </div>
-                </div>  
-                    
-                    <div class="subject">
-                        <label for="subject"></label>
-                        <input type="text" id="subject" name="sname" placeholder="Subject of the e-mail">
-                    </div>
-                    <div class="message">
-                        <textarea name="message" id="message_content" cols="30" rows="10" placeholder="Type your message here..." maxlength="300"></textarea>
-                    </div>      
-            </form>
-            <div class="button_line">
-                <button type="button" id="done_button" class="d_button" onclick="submit_form();"></button>
+            <div class="quickinfos">
+                <span class="infos"><p>Genre : Rock </p></span>
+                <span class="infos"><p>Origin country : France </p></span>
+                <span class="infos">  <p> Years of activity : 2002-today</p> </span>
+                <span class="infos"> <p> Number of albums : 7 </p></span>
+            
             </div>
 
+            <div class="Bio">
+                <h2 class="Bio1">Bio</h2>
+                <p class="Bio2"> Lorem ipsum Blabla, funded in such hard times, from hard to easy and I tried to fill those fields randomly
+                    without the purposer of finding in such places the hope I was searching for
+                </p>
+
+            </div>
+            
+            <div class="Bio">
+                <h2 class="Bio1">Discography</h2>
+
+                    <div class="album">
+                        <img src="public/img/Albums/theEvol.jpg" class="albumphoto">
+                        <p class="albumtext"> The Evol (2017) </p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/apetizer.jpg" class="albumphoto">
+                        <p class="albumtext"> ApeTizer (2017)</p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/blackpixel.jpg" class="albumphoto">
+                        <p class="albumtext"> The Black Pixel Ape (2014)</p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/whitepixel.jpg" class="albumphoto">
+                        <p class="albumtext"> The White Pixel Ape (2014) </p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/geeks.jpg" class="albumphoto">
+                        <p class="albumtext"> The Geeks and the Jerkin' Socks (2011) </p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/badporn.jpg" class="albumphoto">
+                        <p class="albumtext"> Bad Porn Movie Trax (2009) </p>
+                    </div>
+
+                    <div class="album">
+                        <img src="public/img/Albums/loco.jpg" class="albumphoto">
+                        <p class="albumtext"> Loco con da frenchy talkin' (2006)  </p>
+                    </div>
+
+            </div>
+
+            
         </main>
         
         <footer class = footer>

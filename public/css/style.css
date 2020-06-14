@@ -381,7 +381,8 @@ h2{
 
 #special
 {
-    border: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     
     text-shadow: none;
     transition: 0.2s;
@@ -395,8 +396,10 @@ h2{
 
 .artists
 {
+    margin-top: 100px;
     display: flex;
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: wrap;   
     margin-bottom: 5%;
     justify-content: center;

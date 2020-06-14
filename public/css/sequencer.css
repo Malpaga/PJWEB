@@ -84,7 +84,7 @@ input[type=range]::-moz-range-track{
 
 .text_cont{
     width: 50px;
-    height: 400px;
+    height: 700px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -99,12 +99,17 @@ input[type=range]::-moz-range-track{
 
 .drums_text{
     height: 120px;
-    transform: translateY(-35px);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10px);
 }
 
 .synth_text{
-    height: 280px;
-    transform: translateY(5px);
+    height: 505px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: translateY(-30px);
 }
 
 .drum_line button, .synth_line button{

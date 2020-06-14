@@ -41,12 +41,17 @@ drum_cont.appendChild(drums_line3);
 
 
 
-var C3, D3, E3, F3, G3, A3, B3;
+var C3, C3d, D3, E3, E3b, F3, F3d, G3, A3, A3b, B3, B3b;
 
 C3 = document.createElement("audio");
 C3.type = "audio/ogg";
 C3.src = "public/sound/C3.ogg";
 C3.className = "synth";
+
+C3d = document.createElement("audio");
+C3d.type = "audio/ogg";
+C3d.src = "public/sound/C3d.ogg";
+C3d.className = "synth";
 
 D3 = document.createElement("audio");
 D3.type = "audio/ogg";
@@ -58,10 +63,20 @@ E3.type = "audio/ogg";
 E3.src = "public/sound/E3.ogg";
 E3.className = "synth";
 
+E3b = document.createElement("audio");
+E3b.type = "audio/ogg";
+E3b.src = "public/sound/E3b.ogg";
+E3b.className = "synth";
+
 F3 = document.createElement("audio");
 F3.type = "audio/ogg";
 F3.src = "public/sound/F3.ogg";
 F3.className = "synth";
+
+F3d = document.createElement("audio");
+F3d.type = "audio/ogg";
+F3d.src = "public/sound/F3d.ogg";
+F3d.className = "synth";
 
 G3 = document.createElement("audio");
 G3.type = "audio/ogg";
@@ -73,17 +88,32 @@ A3.type = "audio/ogg";
 A3.src = "public/sound/A3.ogg";
 A3.className = "synth";
 
+A3b = document.createElement("audio");
+A3b.type = "audio/ogg";
+A3b.src = "public/sound/A3b.ogg";
+A3b.className = "synth";
+
 B3 = document.createElement("audio");
 B3.type = "audio/ogg";
 B3.src = "public/sound/B3.ogg";
 B3.className = "synth";
 
-var C4, D4, E4, F4, G4, A4, B4;
+B3b = document.createElement("audio");
+B3b.type = "audio/ogg";
+B3b.src = "public/sound/B3b.ogg";
+B3b.className = "synth";
+
+var C4, C4d, D4, E4b, E4, F4, F4d, G4, A4b, A4, B4b, B4;
 
 C4 = document.createElement("audio");
 C4.type = "audio/ogg";
 C4.src = "public/sound/C4.ogg";
 C4.className = "synth";
+
+C4d = document.createElement("audio");
+C4d.type = "audio/ogg";
+C4d.src = "public/sound/C4d.ogg";
+C4d.className = "synth";
 
 D4 = document.createElement("audio");
 D4.type = "audio/ogg";
@@ -95,10 +125,20 @@ E4.type = "audio/ogg";
 E4.src = "public/sound/E4.ogg";
 E4.className = "synth";
 
+E4b = document.createElement("audio");
+E4b.type = "audio/ogg";
+E4b.src = "public/sound/E4b.ogg";
+E4b.className = "synth";
+
 F4 = document.createElement("audio");
 F4.type = "audio/ogg";
 F4.src = "public/sound/F4.ogg";
 F4.className = "synth";
+
+F4d = document.createElement("audio");
+F4d.type = "audio/ogg";
+F4d.src = "public/sound/F4d.ogg";
+F4d.className = "synth";
 
 G4 = document.createElement("audio");
 G4.type = "audio/ogg";
@@ -110,18 +150,28 @@ A4.type = "audio/ogg";
 A4.src = "public/sound/A4.ogg";
 A4.className = "synth";
 
+A4b = document.createElement("audio");
+A4b.type = "audio/ogg";
+A4b.src = "public/sound/A4b.ogg";
+A4b.className = "synth";
+
 B4 = document.createElement("audio");
 B4.type = "audio/ogg";
 B4.src = "public/sound/B4.ogg";
 B4.className = "synth";
 
-const tones = [C3, D3, E3, F3, G3, A3, B3];
-const tones2 = [C4, D4, E4, F4, G4, A4, B4];
+B4b = document.createElement("audio");
+B4b.type = "audio/ogg";
+B4b.src = "public/sound/B4b.ogg";
+B4b.className = "synth";
+
+const tones = [C3, C3d, D3, E3b, E3, F3, F3d, G3, A3b, A3, B3b, B3];
+const tones2 = [C4, C4d, D4, E4b, E4, F4, F4d, G4, A4b, A4, B4b, B4];
 
 var synth_cont = document.createElement("div");
 synth_cont.className = "synth_container";
 
-var s_line1, s_line2, s_line3, s_line4, s_line5, s_line6, s_line7;
+var s_line1, s_line2, s_line3, s_line4, s_line5, s_line6, s_line7, s_line8, s_line9, s_line10, s_line11, s_line12;
 
 
 
@@ -153,9 +203,29 @@ s_line7 = document.createElement("div");
 s_line7.className = "synth_line";
 synth_cont.appendChild(s_line7);
 
+s_line8 = document.createElement("div");
+s_line8.className = "synth_line";
+synth_cont.appendChild(s_line8);
+
+s_line9 = document.createElement("div");
+s_line9.className = "synth_line";
+synth_cont.appendChild(s_line9);
+
+s_line10 = document.createElement("div");
+s_line10.className = "synth_line";
+synth_cont.appendChild(s_line10);
+
+s_line11 = document.createElement("div");
+s_line11.className = "synth_line";
+synth_cont.appendChild(s_line11);
+
+s_line12 = document.createElement("div");
+s_line12.className = "synth_line";
+synth_cont.appendChild(s_line12);
+
 var timeNb = 16;
 
-let but1, but2, but3, but4, but5, but6, but7;
+let but1, but2, but3, but4, but5, but6, but7, but8, but9, but10, but11, but12;
 
 function set_time_8(){
     if(timeNb == 16){
@@ -210,6 +280,11 @@ function shrink_sequencer(n){
         s_line5.removeChild(s_line5.lastElementChild);
         s_line6.removeChild(s_line6.lastElementChild);
         s_line7.removeChild(s_line7.lastElementChild); 
+        s_line8.removeChild(s_line8.lastElementChild);
+        s_line9.removeChild(s_line9.lastElementChild);
+        s_line10.removeChild(s_line10.lastElementChild);
+        s_line11.removeChild(s_line11.lastElementChild);
+        s_line12.removeChild(s_line12.lastElementChild);
     }
 }
 
@@ -259,6 +334,26 @@ function expand_sequencer(n){
         but7.type = "button";
         but7.className = "synth_button";
 
+        but8 = document.createElement("button");
+        but8.type = "button";
+        but8.className = "synth_button";
+
+        but9 = document.createElement("button");
+        but9.type = "button";
+        but9.className = "synth_button";
+
+        but10 = document.createElement("button");
+        but10.type = "button";
+        but10.className = "synth_button";
+
+        but11 = document.createElement("button");
+        but11.type = "button";
+        but11.className = "synth_button";
+
+        but12 = document.createElement("button");
+        but12.type = "button";
+        but12.className = "synth_button";
+
         s_line1.appendChild(but1);
         s_line2.appendChild(but2);
         s_line3.appendChild(but3);
@@ -266,6 +361,11 @@ function expand_sequencer(n){
         s_line5.appendChild(but5);
         s_line6.appendChild(but6);
         s_line7.appendChild(but7);
+        s_line8.appendChild(but8);
+        s_line9.appendChild(but9);
+        s_line10.appendChild(but10);
+        s_line11.appendChild(but11);
+        s_line12.appendChild(but12);
     }
 }
 
@@ -298,33 +398,53 @@ function init_drums(){
 function init_synths(){
     for(let i=0; i<timeNb; i++)
     {
-        let but1 = document.createElement("button");
+        but1 = document.createElement("button");
         but1.type = "button";
         but1.className = "synth_button";
 
-        let but2 = document.createElement("button");
+        but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "synth_button";
 
-        let but3 = document.createElement("button");
+        but3 = document.createElement("button");
         but3.type = "button";
         but3.className = "synth_button";
 
-        let but4 = document.createElement("button");
+        but4 = document.createElement("button");
         but4.type = "button";
         but4.className = "synth_button";
 
-        let but5 = document.createElement("button");
+        but5 = document.createElement("button");
         but5.type = "button";
         but5.className = "synth_button";
 
-        let but6 = document.createElement("button");
+        but6 = document.createElement("button");
         but6.type = "button";
         but6.className = "synth_button";
 
-        let but7 = document.createElement("button");
+        but7 = document.createElement("button");
         but7.type = "button";
         but7.className = "synth_button";
+
+        but8 = document.createElement("button");
+        but8.type = "button";
+        but8.className = "synth_button";
+
+        but9 = document.createElement("button");
+        but9.type = "button";
+        but9.className = "synth_button";
+
+        but10 = document.createElement("button");
+        but10.type = "button";
+        but10.className = "synth_button";
+
+        but11 = document.createElement("button");
+        but11.type = "button";
+        but11.className = "synth_button";
+
+        but12 = document.createElement("button");
+        but12.type = "button";
+        but12.className = "synth_button";
 
         s_line1.appendChild(but1);
         s_line2.appendChild(but2);
@@ -333,6 +453,11 @@ function init_synths(){
         s_line5.appendChild(but5);
         s_line6.appendChild(but6);
         s_line7.appendChild(but7);
+        s_line8.appendChild(but8);
+        s_line9.appendChild(but9);
+        s_line10.appendChild(but10);
+        s_line11.appendChild(but11);
+        s_line12.appendChild(but12);
         
     }
     sequencer.appendChild(synth_cont);

@@ -28,7 +28,7 @@ function getRandomColor() {
 
 function submit_form(){
 
-    if(document.getElementById('aname').checkValidity() == true){
+    if(document.getElementById('name').checkValidity() == true){
         but_click();
         setTimeout(function(){
             var newReview = document.createElement("div");

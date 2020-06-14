@@ -48,7 +48,7 @@
 
 #about p{
     width: 35%;
-    flex-wrap: wrap;
+    margin: 10px;
     text-align: justify;
     margin-top: auto;
     margin-bottom: auto;
@@ -68,7 +68,7 @@
 #project{
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     margin-top: 50px;
     margin-left: 25px;
@@ -81,7 +81,7 @@
 #Alix{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
     margin-right: 25px;
@@ -90,7 +90,7 @@
 #Philippe{
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     margin-top: 50px;
     margin-left: 25px;
@@ -99,7 +99,7 @@
 #Lilian{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
     margin-right: 25px;

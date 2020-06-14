@@ -49,6 +49,7 @@ h1{
 
 .title{
     margin: 150px auto;
+    font-size: 3vw;
 }
 
 .welcome-title{
@@ -79,11 +80,12 @@ h2{
     background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(249, 202, 36, 0.6) 50%);
     background-size: 200%;
     border-radius: 10rem;
-    transition: background-position 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
   
 .seq-link:hover{
     background-position: -100%;
+    color: black;
 }
 
 h3{    
@@ -345,7 +347,7 @@ h2{
 
 .Bio
 {
-    width:75%;
+    width:90%;
     margin:auto;
     
 }
@@ -353,7 +355,7 @@ h2{
 .album
 {
     margin:auto;
-    margin-left: 150px;
+    margin-left: 10%;
     display:flex;
     
     padding-left: 8%;
@@ -362,14 +364,14 @@ h2{
 
 .albumphoto
 {
-    width: 20%;
-    
+    max-height: 300px;
+    min-height: 100px;
     margin-bottom: 2%;
 }
 
 .albumtext
 {
-    font-size:250%;
+    font-size: 2vw;
     margin: auto;
     margin-top: 8%;
     justify-content: center;

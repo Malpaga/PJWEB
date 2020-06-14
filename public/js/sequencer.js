@@ -313,6 +313,7 @@ function expand_sequencer(n){
         but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "synth_button";
+        but2.style.backgroundColor = "rgb(136, 78, 136)";
 
         but3 = document.createElement("button");
         but3.type = "button";
@@ -321,6 +322,7 @@ function expand_sequencer(n){
         but4 = document.createElement("button");
         but4.type = "button";
         but4.className = "synth_button";
+        but4.style.backgroundColor = "rgb(136, 78, 136)";
 
         but5 = document.createElement("button");
         but5.type = "button";
@@ -333,6 +335,7 @@ function expand_sequencer(n){
         but7 = document.createElement("button");
         but7.type = "button";
         but7.className = "synth_button";
+        but7.style.backgroundColor = "rgb(136, 78, 136)";
 
         but8 = document.createElement("button");
         but8.type = "button";
@@ -341,6 +344,7 @@ function expand_sequencer(n){
         but9 = document.createElement("button");
         but9.type = "button";
         but9.className = "synth_button";
+        but9.style.backgroundColor = "rgb(136, 78, 136)";
 
         but10 = document.createElement("button");
         but10.type = "button";
@@ -349,6 +353,7 @@ function expand_sequencer(n){
         but11 = document.createElement("button");
         but11.type = "button";
         but11.className = "synth_button";
+        but11.style.backgroundColor = "rgb(136, 78, 136)";
 
         but12 = document.createElement("button");
         but12.type = "button";
@@ -405,6 +410,7 @@ function init_synths(){
         but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "synth_button";
+        but2.style.backgroundColor = "rgb(136, 78, 136)";
 
         but3 = document.createElement("button");
         but3.type = "button";
@@ -413,6 +419,7 @@ function init_synths(){
         but4 = document.createElement("button");
         but4.type = "button";
         but4.className = "synth_button";
+        but4.style.backgroundColor = "rgb(136, 78, 136)";
 
         but5 = document.createElement("button");
         but5.type = "button";
@@ -425,6 +432,7 @@ function init_synths(){
         but7 = document.createElement("button");
         but7.type = "button";
         but7.className = "synth_button";
+        but7.style.backgroundColor = "rgb(136, 78, 136)";
 
         but8 = document.createElement("button");
         but8.type = "button";
@@ -433,6 +441,7 @@ function init_synths(){
         but9 = document.createElement("button");
         but9.type = "button";
         but9.className = "synth_button";
+        but9.style.backgroundColor = "rgb(136, 78, 136)";
 
         but10 = document.createElement("button");
         but10.type = "button";
@@ -441,6 +450,7 @@ function init_synths(){
         but11 = document.createElement("button");
         but11.type = "button";
         but11.className = "synth_button";
+        but11.style.backgroundColor = "rgb(136, 78, 136)";
 
         but12 = document.createElement("button");
         but12.type = "button";

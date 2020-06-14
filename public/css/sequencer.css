@@ -142,6 +142,7 @@ button:hover{
 
 .synth_line button:hover{
     background-color: rgba(182, 102, 182, 1);
+    background-color: rgb(136, 78, 136)
     cursor: pointer;
 }
 

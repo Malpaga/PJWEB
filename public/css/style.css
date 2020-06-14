@@ -280,4 +280,164 @@ h2{
     }
 }
 
+.quickinfos
+{
+    margin:auto;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid white;
+    display: flex;
 
+    width: 70%; 
+    justify-content: space-around;
+    
+}
+
+
+
+.infos
+{
+    display:flex;
+    
+    font-size: large;
+    flex-wrap: nowrap;
+    
+
+}
+
+
+.bandphoto
+{
+    text-align: center;
+    
+   
+}
+
+.Bio1
+{
+    margin-top: 2%;
+    margin-left: 8%;   
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+
+.Bio2
+{
+    
+    font-size: large;
+    margin:auto;
+    padding-bottom: 2% ;
+    width: 70%;
+    
+}
+
+#Vulfpeck
+{
+    margin-bottom: 2%;
+    height: 300px;
+    line-height: 300px;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;           
+
+}
+
+.Bio
+{
+    width:75%;
+    margin:auto;
+    
+}
+
+.album
+{
+    margin:auto;
+    margin-left: 150px;
+    display:flex;
+    
+    padding-left: 8%;
+    border-left: 2px solid white;
+}
+
+.albumphoto
+{
+    width: 20%;
+    
+    margin-bottom: 2%;
+}
+
+.albumtext
+{
+    font-size:250%;
+    margin: auto;
+    margin-top: 8%;
+    justify-content: center;
+
+
+
+}
+
+
+#special
+{
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+#special:hover
+{
+    background-color: white;
+}
+
+.artists
+{
+    display: flex;
+    margin:auto;
+    
+    height: 400px;
+    
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+#shaka
+{
+    background-image: url("../img/shakaponk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: auto;
+    transition: 1s;
+}
+
+
+#shaka:hover
+{
+    opacity: 0.7;
+
+}
+
+
+#nujabes
+{
+    background-image: url("../img/nujabes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: auto;
+    transition: 1s;
+}
+
+#nujabes:hover
+{
+    opacity: 0.7;
+}
+
+
+.text
+{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 250%;
+}

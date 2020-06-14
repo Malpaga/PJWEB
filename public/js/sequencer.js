@@ -406,7 +406,7 @@ function init_synths(){
         but1 = document.createElement("button");
         but1.type = "button";
         but1.className = "synth_button";
-        
+
         but2 = document.createElement("button");
         but2.type = "button";
         but2.className = "synth_button";
@@ -470,7 +470,6 @@ function init_synths(){
         s_line12.appendChild(but12);
         
     }
-    
     sequencer.appendChild(synth_cont);
 }
 
